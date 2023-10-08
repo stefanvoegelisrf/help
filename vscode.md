@@ -7,3 +7,5 @@
     - Provides useful snippets for e.g. full component with script setup and typescript
   - [VS Code Extensions - Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
     - Adds sidebar to manage projects and switch easily. Add tags to projects.
+  - [VS Code Extensions - Material Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+    - Add material icons to files and folders
