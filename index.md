@@ -1,12 +1,11 @@
-# Help
-
+# OS
 - [macOS](macos)
 
-## Tools
+# Tools
 
 - [Visual Studio Code](vscode)
 
-## Javascript
+# Javascript
   - [threeJS](threejs)
   - [Nuxt](nuxt)
   - [p5](p5js)
