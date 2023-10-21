@@ -8,6 +8,8 @@
 
 ## Shortcuts
 
+[Shortcut PDF from Blender Guru](Blender_3.0_Shortcuts_v1.2.pdf)
+
 ### Move, scale, rotate, panning
 
 | Shortcut                        | Command                                   |
