@@ -6,6 +6,7 @@
 # Tools
 
 - [Visual Studio Code](vscode)
+- [GitHub Pages](githubpages)
 
 # CSS
 
