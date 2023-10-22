@@ -8,8 +8,10 @@
         - [Inside the browser](#inside-the-browser)
         - [Outside the browser](#outside-the-browser)
     - [Key concepts](#key-concepts)
-    - [Usage with .NET](#usage-with-net)
+    - [Writing WebAssembly with .NET](#writing-webassembly-with-net)
     - [Usage with JavaScript](#usage-with-javascript)
+    - [Writing WebAssembly with AssemblyScript](#writing-webassembly-with-assemblyscript)
+      - [AssemblyScript example](#assemblyscript-example)
 
 
 ## WebAssmebly
@@ -65,7 +67,7 @@ The listed use cases are not a complete list, rather the use cases that would be
 
 WebAssembly modules, memories, tables and instance can be created with JavaScript. Exports of WebAssembly instances can be called by JavaScript as functions.
 
-### Usage with .NET
+### Writing WebAssembly with .NET
 
 > See: [Fermyon - Running .NET in WebAssembly](https://www.fermyon.com/blog/dotnet-wasi)
 
@@ -79,9 +81,28 @@ Detailed instructions on usage with C# can be seen in the linked articles as the
 
 ### Usage with JavaScript
 
+> See: [Mozilla - WebAssembly - Using the JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
+### Writing WebAssembly with AssemblyScript
 
-### Usage with AssemblyScript
+[AssemblyScript](https://www.assemblyscript.org/) is code that targets the WebAssembly feature set. AssemblyScript is written in a variant of TypeScript but with WebAssembly types. AssemblyScript then compiles to WebAssembly.
 
+AssemblyScript provides a [standard library](https://www.assemblyscript.org/stdlib/globals.html) similar to typical JavaScript functions.
 
+#### AssemblyScript example
+
+```
+export function fib(n: i32): i32 {
+  var a = 0, b = 1
+  if (n > 0) {
+    while (--n) {
+      let t = a + b
+      a = b
+      b = t
+    }
+    return b
+  }
+  return a
+}
+```
 
