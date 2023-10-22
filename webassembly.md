@@ -8,7 +8,7 @@
         - [Inside the browser](#inside-the-browser)
         - [Outside the browser](#outside-the-browser)
     - [Key concepts](#key-concepts)
-    - [Usage with C#](#usage-with-c)
+    - [Usage with .NET](#usage-with-net)
     - [Usage with JavaScript](#usage-with-javascript)
 
 
@@ -65,9 +65,17 @@ The listed use cases are not a complete list, rather the use cases that would be
 
 WebAssembly modules, memories, tables and instance can be created with JavaScript. Exports of WebAssembly instances can be called by JavaScript as functions.
 
-### Usage with C#
+### Usage with .NET
 
+> See: [Fermyon - Running .NET in WebAssembly](https://www.fermyon.com/blog/dotnet-wasi)
 
+C# already compiles to a binary executable format called .NET bytecode. This bytecode is dependent on the .NET Standard library and if used, other bytecode like packages from NuGet.
+
+So to use the bytecode in WebAssembly, the .NET runtime, NuGet packages and your own code get compiled to WebAssembly bytecode.
+
+> To achieve this, there is a [GitHub - WASI SDK](https://github.com/SteveSandersonMS/dotnet-wasi-sdk) which can be used(experimental). Such a project has to be built specially, see [GitHub - WASI SDK - Building](https://github.com/SteveSandersonMS/dotnet-wasi-sdk#building-this-repo-from-source)
+
+Detailed instructions on usage with C# can be seen in the linked articles as they are likely to change anyway.
 
 ### Usage with JavaScript
 
