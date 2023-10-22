@@ -15,6 +15,8 @@
 
 - [Processing - Tutorials](https://processing.org/tutorials/)
 - [The Coding Train](https://thecodingtrain.com/)
+- [Fun programming](https://funprogramming.org/)
+- [Processing](https://www.plethora-project.com/education/2017/5/31/processing-java-programming)
 
 ## About p5.js
 
