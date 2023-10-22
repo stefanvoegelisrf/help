@@ -8,6 +8,8 @@
         - [Inside the browser](#inside-the-browser)
         - [Outside the browser](#outside-the-browser)
     - [Key concepts](#key-concepts)
+    - [Usage with C#](#usage-with-c)
+    - [Usage with JavaScript](#usage-with-javascript)
 
 
 ## WebAssmebly
@@ -26,11 +28,11 @@ WebAssembly is not a replacement for JavaScript. WebAssembly is intended for tas
 
 #### Use cases for WebAssembly
 
-WebAssembly has [high-level goals](https://webassembly.org/docs/high-level-goals/) that define what WebAssembly aims to achieve. From these, we can also derive the use cases.
+WebAssembly has [WebAssembly - High-level goals](https://webassembly.org/docs/high-level-goals/) that define what WebAssembly aims to achieve. From these, we can also derive the use cases.
 
 The listed use cases are not a complete list, rather the use cases that would be most relevant for me. To see the full list, view the link below.
 
-> See: [WebAssembly use cases](https://webassembly.org/docs/use-cases/)
+> See: [WebAssembly - Use cases](https://webassembly.org/docs/use-cases/)
 
 ##### Inside the browser
 
@@ -54,6 +56,24 @@ The listed use cases are not a complete list, rather the use cases that would be
 
 ### Key concepts
 
-TODO: Add intro for web assembly and how to use it with c# and javascript
+> See: [Mozilla - WebAssembly key concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts#webassembly_key_concepts)
+
+- **Module**: A module is a compiled WebAssembly binary. It declares imports and exports like ES modules and is stateless.
+- **Memory**: Memory is an ArrayBuffer that is accessed by WebAssembly memory access instructions.
+- **Table**: A typed array containing references(e.g. functions).
+- **Instance**: A module paired with the runtime state(memory, table and variables).
+
+WebAssembly modules, memories, tables and instance can be created with JavaScript. Exports of WebAssembly instances can be called by JavaScript as functions.
+
+### Usage with C#
+
+
+
+### Usage with JavaScript
+
+
+
+### Usage with AssemblyScript
+
 
 
