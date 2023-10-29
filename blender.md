@@ -4,6 +4,12 @@
   - [Shortcuts](#shortcuts)
     - [Move, scale, rotate, panning](#move-scale-rotate-panning)
     - [Change view](#change-view)
+    - [Add objects](#add-objects)
+    - [Edit mode(\& other modes)](#edit-mode-other-modes)
+  - [Knowledge](#knowledge)
+    - [Subdivision surface modifier](#subdivision-surface-modifier)
+    - [Shade smooth \& shade flat](#shade-smooth--shade-flat)
+    - [Proportional editing](#proportional-editing)
 
 
 ## Shortcuts
@@ -26,6 +32,9 @@
 
 > Press ```esc``` or right click to cancel the command
 
+
+> These commands are also used to modify meshes, vertices and so on
+
 ### Change view
 
 | Shortcut            | Command                  |
@@ -40,3 +49,39 @@
 | **<** + 9           | back                     |
 | middle mouse button | orbit                    |
 |                     | hold alt to snap to axis |
+
+
+### Add objects
+
+| Shortcut      | Command       |
+| ------------- | ------------- |
+| **Shift** + A | open add menu |
+
+> There is a panel to customize the added shape. If it has been closed, it can be restored by pressing **F9**
+
+### Edit mode(& other modes)
+
+| Shortcut           | Command                        |
+| ------------------ | ------------------------------ |
+| Tab                | switch to edit mode            |
+| **Control** + tab  | open mode selector             |
+| O                  | switch to proportional editing |
+| **option/alt** + S | shrink and fatten tool         |
+
+## Knowledge
+
+### Subdivision surface modifier
+
+The Subdivision Surface modifier is used to split the faces of a mesh into smaller faces, giving it a smooth appearance.
+
+> Keep the viewport subdivision low for better editing performance. Viewport subdivision surface modifier can also be turned off in blender.
+
+### Shade smooth & shade flat
+
+The shading of an object can be change by **right-clicking**. When using "shade-smooth", the meshes are not rendered individually, making the object appear more smooth. When using "shade-flat", individual meshes are visible.
+
+### Proportional editing
+
+Proportional editing is done in edit mode and can be turned on with **O**. When selecting a vertice, vertices around it are also selected. E.g. when moving a single vertice, the vertice around move in the same direction proportionally.
+
+> Change the proportional size by **scrolling up**
