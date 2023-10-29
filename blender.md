@@ -70,17 +70,17 @@
 
 ## Knowledge
 
-### Subdivision surface modifier
+### [Subdivision surface modifier](https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/subdivision_surface.html)
 
 The Subdivision Surface modifier is used to split the faces of a mesh into smaller faces, giving it a smooth appearance.
 
 > Keep the viewport subdivision low for better editing performance. Viewport subdivision surface modifier can also be turned off in blender.
 
-### Shade smooth & shade flat
+### [Shade smooth & shade flat](https://docs.blender.org/manual/en/latest/modeling/meshes/editing/face/shading.html)
 
 The shading of an object can be change by **right-clicking**. When using "shade-smooth", the meshes are not rendered individually, making the object appear more smooth. When using "shade-flat", individual meshes are visible.
 
-### Proportional editing
+### [Proportional editing](https://docs.blender.org/manual/en/latest/editors/3dview/controls/proportional_editing.html)
 
 Proportional editing is done in edit mode and can be turned on with **O**. When selecting a vertice, vertices around it are also selected. E.g. when moving a single vertice, the vertice around move in the same direction proportionally.
 
