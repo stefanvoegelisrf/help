@@ -3,11 +3,15 @@
 - [Blender](#blender)
   - [Shortcuts](#shortcuts)
     - [Move, scale, rotate, panning](#move-scale-rotate-panning)
+    - [Duplicate](#duplicate)
+    - [X-Ray mode](#x-ray-mode)
+    - [Separating](#separating)
     - [Change view](#change-view)
     - [Add objects](#add-objects)
     - [Edit mode(\& other modes)](#edit-mode-other-modes)
   - [Knowledge](#knowledge)
     - [Subdivision surface modifier](#subdivision-surface-modifier)
+    - [Solidify modifier](#solidify-modifier)
     - [Shade smooth \& shade flat](#shade-smooth--shade-flat)
     - [Proportional editing](#proportional-editing)
 
@@ -34,6 +38,24 @@
 
 
 > These commands are also used to modify meshes, vertices and so on
+
+### Duplicate
+
+| Shortcut      | Command   |
+| ------------- | --------- |
+| **Shift** + D | duplicate |
+
+### X-Ray mode
+
+| Shortcut           | Command           |
+| ------------------ | ----------------- |
+| **Option/Alt** + Z | toggle X-Ray mode |
+
+### Separating
+
+| Shortcut | Command              |
+| -------- | -------------------- |
+| P        | open separation menu |
 
 ### Change view
 
@@ -75,6 +97,10 @@
 The Subdivision Surface modifier is used to split the faces of a mesh into smaller faces, giving it a smooth appearance.
 
 > Keep the viewport subdivision low for better editing performance. Viewport subdivision surface modifier can also be turned off in blender.
+
+### [Solidify modifier](https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/solidify.html)
+
+The Solidify modifier takes the surface of any mesh and adds depth, thickness to it.
 
 ### [Shade smooth & shade flat](https://docs.blender.org/manual/en/latest/modeling/meshes/editing/face/shading.html)
 
