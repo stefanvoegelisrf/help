@@ -8,12 +8,15 @@
     - [Separating](#separating)
     - [Change view](#change-view)
     - [Add objects](#add-objects)
-    - [Edit mode(\& other modes)](#edit-mode-other-modes)
+    - [Edit mode(\& other object modes)](#edit-mode-other-object-modes)
+    - [Extruding](#extruding)
   - [Knowledge](#knowledge)
     - [Subdivision surface modifier](#subdivision-surface-modifier)
     - [Solidify modifier](#solidify-modifier)
     - [Shade smooth \& shade flat](#shade-smooth--shade-flat)
     - [Proportional editing](#proportional-editing)
+    - [Shrinkwrap modifier](#shrinkwrap-modifier)
+    - [Snapping](#snapping)
 
 
 ## Shortcuts
@@ -81,7 +84,7 @@
 
 > There is a panel to customize the added shape. If it has been closed, it can be restored by pressing **F9**
 
-### Edit mode(& other modes)
+### [Edit mode(& other object modes)](https://docs.blender.org/manual/en/latest/editors/3dview/modes.html)
 
 | Shortcut           | Command                        |
 | ------------------ | ------------------------------ |
@@ -89,6 +92,12 @@
 | **Control** + tab  | open mode selector             |
 | O                  | switch to proportional editing |
 | **option/alt** + S | shrink and fatten tool         |
+
+### [Extruding](https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/extrude.html)
+
+| Shortcut                           | Command                  |
+| ---------------------------------- | ------------------------ |
+| E(with vertices or faces selected) | extrude new vertice/face |
 
 ## Knowledge
 
@@ -111,3 +120,16 @@ The shading of an object can be change by **right-clicking**. When using "shade-
 Proportional editing is done in edit mode and can be turned on with **O**. When selecting a vertice, vertices around it are also selected. E.g. when moving a single vertice, the vertice around move in the same direction proportionally.
 
 > Change the proportional size by **scrolling up**
+
+### [Shrinkwrap modifier](https://docs.blender.org/manual/en/latest/modeling/modifiers/deform/shrinkwrap.html)
+
+The Shrinkwrap modifier allows an object to “shrink” to the surface of another object. It moves each vertex of the object being modified to the closest position on the surface of the given mesh (using one of the four methods available).
+
+> E.g. for a donut, this enables us to wrap the icing around the donut.
+
+
+### [Snapping](https://docs.blender.org/manual/en/latest/editors/3dview/controls/snapping.html)
+
+Snapping lets you easily align objects and mesh elements to others. It can be toggled by clicking the magnet icon in the 3D Viewport’s header, or more temporarily by holding ```ctrl```.
+
+> If snapping is enabled, a vertice might not move and cause confusion, keep this in mind to check if snapping is enabled.
