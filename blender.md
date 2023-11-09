@@ -2,7 +2,9 @@
 
 - [Blender](#blender)
   - [Shortcuts](#shortcuts)
+    - [Open preferences](#open-preferences)
     - [Move, scale, rotate, panning](#move-scale-rotate-panning)
+    - [Select](#select)
     - [Duplicate](#duplicate)
     - [X-Ray mode](#x-ray-mode)
     - [Separating](#separating)
@@ -10,6 +12,8 @@
     - [Add objects](#add-objects)
     - [Edit mode(\& other object modes)](#edit-mode-other-object-modes)
     - [Extruding](#extruding)
+    - [Sculpting](#sculpting)
+    - [Areas](#areas)
   - [Knowledge](#knowledge)
     - [Subdivision surface modifier](#subdivision-surface-modifier)
     - [Solidify modifier](#solidify-modifier)
@@ -17,11 +21,39 @@
     - [Proportional editing](#proportional-editing)
     - [Shrinkwrap modifier](#shrinkwrap-modifier)
     - [Snapping](#snapping)
+    - [Rendering](#rendering)
+      - [GPU rendering: Changing settigns to render on GPU](#gpu-rendering-changing-settigns-to-render-on-gpu)
+      - [Viewport shading](#viewport-shading)
+        - [Wireframe](#wireframe)
+        - [Solid](#solid)
+        - [Material preview](#material-preview)
+        - [Rendered](#rendered)
+      - [Eevee](#eevee)
+        - [Improving Eevee rendering](#improving-eevee-rendering)
+          - [Change shadow](#change-shadow)
+          - [Ambient occlusion](#ambient-occlusion)
+          - [Screen space reflections](#screen-space-reflections)
+      - [Cycles](#cycles)
+        - [Samples](#samples)
+    - [Cameras](#cameras)
+      - [Focal length/FOV](#focal-lengthfov)
+      - [Depth of field](#depth-of-field)
+      - [Sensor size](#sensor-size)
+      - [Orthographic perspective](#orthographic-perspective)
+      - [Camera view](#camera-view)
+    - [Materials](#materials)
+      - [Light scattering](#light-scattering)
 
 
 ## Shortcuts
 
 [Shortcut PDF from Blender Guru](Blender_3.0_Shortcuts_v1.2.pdf)
+
+### Open preferences
+
+| Shortcut    | Command          |
+| ----------- | ---------------- |
+| **CMD** + , | Open preferences |
 
 ### Move, scale, rotate, panning
 
@@ -36,11 +68,18 @@
 |                                 | press x,y,z to roate along axis           |
 |                                 | click middle mouse button to snap to axis |
 | **Shift** + middle mouse button | Pan                                       |
+| **option** + G                  | Snap object to center of scene            |
 
 > Press ```esc``` or right click to cancel the command
 
 
 > These commands are also used to modify meshes, vertices and so on
+
+### Select
+
+| Shortcut               | Command          |
+| ---------------------- | ---------------- |
+| **option** + **click** | Select edge loop |
 
 ### Duplicate
 
@@ -62,18 +101,19 @@
 
 ### Change view
 
-| Shortcut            | Command                  |
-| ------------------- | ------------------------ |
-| **<** + 1           | camera                   |
-| **<** + 2           | bottom                   |
-| **<** + 3           | selected                 |
-| **<** + 4           | left                     |
-| **<** + 6           | right                    |
-| **<** + 7           | front                    |
-| **<** + 8           | top                      |
-| **<** + 9           | back                     |
-| middle mouse button | orbit                    |
-|                     | hold alt to snap to axis |
+| Shortcut                 | Command                     |
+| ------------------------ | --------------------------- |
+| **<** + 1                | camera                      |
+| **<** + 2                | bottom                      |
+| **<** + 3                | selected                    |
+| **<** + 4                | left                        |
+| **<** + 6                | right                       |
+| **<** + 7                | front                       |
+| **<** + 8                | top                         |
+| **<** + 9                | back                        |
+| middle mouse button      | orbit                       |
+|                          | hold alt to snap to axis    |
+| **option** + **CMD** + 0 | Align active camera to view |
 
 
 ### Add objects
@@ -98,6 +138,25 @@
 | Shortcut                           | Command                  |
 | ---------------------------------- | ------------------------ |
 | E(with vertices or faces selected) | extrude new vertice/face |
+
+### [Sculpting](https://docs.blender.org/manual/en/latest/sculpt_paint/index.html)
+
+- [Blender - Brush introduction](https://docs.blender.org/manual/en/latest/sculpt_paint/brush/introduction.html)
+
+| Shortcut      | Command                            |
+| ------------- | ---------------------------------- |
+| G             | switch to grab brush               |
+| F             | change radius size                 |
+| **Shift** + F | change strength size               |
+| Shift         | Switch to smooth brush temporarily |
+| **Shift** + S | Switch to smooth brush             |
+| **Shift** + I | Switch to inflate brush            |
+
+### [Areas](https://docs.blender.org/manual/en/latest/interface/window_system/areas.html)
+
+Windows inside blender are called areas.
+
+> Place the cursor in the corner of an area to create a new area. E.g. to split the view.
 
 ## Knowledge
 
@@ -133,3 +192,94 @@ The Shrinkwrap modifier allows an object to “shrink” to the surface of anoth
 Snapping lets you easily align objects and mesh elements to others. It can be toggled by clicking the magnet icon in the 3D Viewport’s header, or more temporarily by holding ```ctrl```.
 
 > If snapping is enabled, a vertice might not move and cause confusion, keep this in mind to check if snapping is enabled.
+
+### [Rendering]()
+
+#### [GPU rendering](https://docs.blender.org/manual/en/latest/render/cycles/gpu_rendering.html): Changing settigns to render on GPU
+
+Use GPU for Cycles: **Preferences** -> **System** -> Switch Cycles Render Devices to use **Metal**(on Mac).
+
+In **scene settings**, change the device to **GPU compute**.
+
+#### [Viewport shading](https://docs.blender.org/manual/en/latest/editors/3dview/display/shading.html)
+
+##### Wireframe
+
+Only displays the edges (wireframes) of the objects in the scene.
+
+##### Solid
+
+It shows solid geometry but uses simplified shading and lighting without the use of shader nodes. Solid mode is good for modeling and sculpting, and is really useful with the multitude of options to emphasize certain geometric features.
+
+##### Material preview
+
+This mode is particularly suited for previewing materials and painting textures. You can select different lighting conditions to test your materials.
+
+> Change settings to use scene lights and scene world
+
+##### Rendered
+
+Render the 3D Viewport using the scene’s Render Engine, for interactive rendering. This gives you a preview of the final result, including scene lighting effects.
+
+#### [Eevee](https://docs.blender.org/manual/en/latest/render/eevee/index.html)
+
+Eevee is the built-in realtime render engine which focuses on speed and interactivity.
+
+Unlike Cycles, Eevee is not a raytrace render engine. Instead of computing each ray of light, Eevee uses a process called rasterization. Therefore Cycles will provide more physically accurate renders.
+
+##### Improving Eevee rendering
+
+Eevee rendering can be improved by applied various techniques listed below.
+
+###### Change shadow
+
+> Change cube size to improve shadow resolution
+
+> Select light -> Light settings -> Shadow -> Reduce/increase bias according to size of object
+
+###### Ambient occlusion
+
+Turn on ambient occlusion to improve dark parts of image and achieve more realistic result.
+
+###### Screen space reflections
+
+To get reflections, turn on scren space reflection.
+
+#### [Cycles](https://docs.blender.org/manual/en/latest/render/cycles/index.html)
+
+##### Samples
+
+Reduce samples to increase render time based on the size of the object. To counter the effect of less samples, denoising can be activated. Denoising will slow the render duration, to make it more performant, the start sample can be changed.
+
+TODO: adaptive sampling
+
+### [Cameras](https://docs.blender.org/manual/en/latest/render/cameras.html)
+
+#### Focal length/FOV
+
+The Focal Length controls the amount of zoom, i.e. the amount of the scene which is visible all at once. Longer focal lengths result in a smaller FOV (more zoom), while short focal lengths allow you to see more of the scene at once (larger FOV, less zoom).
+
+#### Depth of field
+
+Focus an object to determine the focal point. If no object is focussed, define the focal distance.
+
+#### Sensor size
+
+#### Orthographic perspective
+
+Objects appear at their actual size, regardless of distance. Lines will be parallel.
+
+#### [Camera view](https://docs.blender.org/manual/en/latest/editors/3dview/navigate/camera_view.html)
+
+Camera view shows the current scene from the active camera's viewpoint.
+
+### Materials
+
+To create a basic material, change the color and adjust the roughness.
+
+
+#### Light scattering
+
+To add scattering, add subsurface and and change subsurface radius and color.
+
+TODO: change workspace by using ctrl tab
