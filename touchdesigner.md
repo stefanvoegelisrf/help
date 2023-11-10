@@ -5,6 +5,12 @@
 
 ## Resources
 
+- [SimonAA - Looping Noise in TouchDesigner](https://www.simonaa.media/tutorials/looping-noise-part-1)
+- [SimonAA - Noise Displacement in TouchDesigner](https://www.simonaa.media/tutorials/noisedisplacement)
+- [SimonAA - Tutorials & Articles](https://www.simonaa.media/tutorials-articles)
+- [Touch Designer Workshop Resources](https://github.com/kratadata/TD-Workshop)
+- [TouchDesigner - Fundamentals](https://learn.derivative.ca/courses/100-fundamentals/)
+
 ## Noise
 
 Noise is easily generated in TouchDesigner through the native noise operators (Noise TOP, Noise CHOP and Noise SOP). For more variation beyond the noise types found in the Noise TOP check out the noise component found in the generators section of the palette.
