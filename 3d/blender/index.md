@@ -265,8 +265,12 @@ Eevee rendering can be improved by applied various techniques listed below.
 ###### Change shadow
 
 > Change cube size to improve shadow resolution
+>
+> ![Eevee shadows](images/Eevee%20shadows.png)
 
 > Select light -> Light settings -> Shadow -> Reduce/increase bias according to size of object
+
+![Light shadows](images/Light%20shadow.png)
 
 ###### Ambient occlusion
 
@@ -290,9 +294,13 @@ TODO: adaptive sampling
 
 The Focal Length controls the amount of zoom, i.e. the amount of the scene which is visible all at once. Longer focal lengths result in a smaller FOV (more zoom), while short focal lengths allow you to see more of the scene at once (larger FOV, less zoom).
 
+![Camera focal length](images/Camera%20focal%20length.png)
+
 #### Depth of field
 
 Focus an object to determine the focal point. If no object is focussed, define the focal distance.
+
+![Camera depth of field](images/Camera%20depth%20of%20field.png)
 
 #### Sensor size
 
