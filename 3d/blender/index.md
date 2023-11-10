@@ -353,3 +353,9 @@ The settings of texture drawing, open the **active tool** tab in the properties 
 #### UV Mapping
 
 The UV mapping defines how a texture is mapped to a object. For this to work, the faces of an object are unwrapped onto a square. This can be changed in several ways by using the UV menu.
+
+![UV menu](images/UV%20menu.png)
+
+E.g. a cube is by default unwrapped in the following way:
+
+![UV default unwrapping of cube](images/UV%20default%20cupe%20unwrapping.png)
