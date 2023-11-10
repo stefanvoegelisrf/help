@@ -83,7 +83,6 @@
 
 > Press ```esc``` or right click to cancel the command
 
-
 > These commands are also used to modify meshes, vertices and so on
 
 ### Select
@@ -269,8 +268,8 @@ Eevee rendering can be improved by applied various techniques listed below.
 > ![Eevee shadows](images/Eevee%20shadows.png)
 
 > Select light -> Light settings -> Shadow -> Reduce/increase bias according to size of object
-
-![Light shadows](images/Light%20shadow.png)
+>
+> ![Light shadows](images/Light%20shadow.png)
 
 ###### Ambient occlusion
 
