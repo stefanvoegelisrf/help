@@ -24,12 +24,14 @@
 
 - [3d](3d)
 - [Blender](3d/blender)
+- [Unity](unity)
 - [Physically based rendering](3d/physicallybasedrendering)
 
 # Creative coding
 
 - [p5](p5js)
 - [Graphic libraries](graphiclibraries)
+- [Touch designer](touchdesigner)
 
 # UI frameworks
 
