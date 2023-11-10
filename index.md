@@ -32,6 +32,7 @@
 - [p5](p5js)
 - [Graphic libraries](graphiclibraries)
 - [Touch designer](touchdesigner)
+- [Noise](noise)
 
 # UI frameworks
 
