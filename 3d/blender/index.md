@@ -79,6 +79,8 @@
 | **option** + G                        | Snap object to center of scene            |
 | H (with object selected)              | Hide object                               |
 | **option** + H (with object selected) | Unhide object                             |
+
+
 > Press ```esc``` or right click to cancel the command
 
 
