@@ -16,8 +16,9 @@
     - [Sculpting](#sculpting)
     - [Areas](#areas)
   - [Knowledge](#knowledge)
-    - [Subdivision surface modifier](#subdivision-surface-modifier)
-    - [Solidify modifier](#solidify-modifier)
+    - [Modifiers](#modifiers)
+      - [Subdivision surface modifier](#subdivision-surface-modifier)
+      - [Solidify modifier](#solidify-modifier)
     - [Shade smooth \& shade flat](#shade-smooth--shade-flat)
     - [Proportional editing](#proportional-editing)
     - [Shrinkwrap modifier](#shrinkwrap-modifier)
@@ -49,6 +50,7 @@
       - [Texture coordinate](#texture-coordinate)
         - [Creating a basic wave pattern](#creating-a-basic-wave-pattern)
       - [Image texture](#image-texture)
+      - [UV Mapping](#uv-mapping)
       - [Physically Based Rendering(PBR)](#physically-based-renderingpbr)
         - [1. **Diffuse Reflection**](#1-diffuse-reflection)
         - [2. **Specular Reflection**](#2-specular-reflection)
@@ -182,13 +184,17 @@ Windows inside blender are called areas.
 
 ## Knowledge
 
-### [Subdivision surface modifier](https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/subdivision_surface.html)
+### [Modifiers](https://docs.blender.org/manual/en/latest/modeling/modifiers/index.html)
+
+Modifiers are automatic operations that affect an object’s geometry in a non-destructive way.
+
+#### [Subdivision surface modifier](https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/subdivision_surface.html)
 
 The Subdivision Surface modifier is used to split the faces of a mesh into smaller faces, giving it a smooth appearance.
 
 > Keep the viewport subdivision low for better editing performance. Viewport subdivision surface modifier can also be turned off in blender.
 
-### [Solidify modifier](https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/solidify.html)
+#### [Solidify modifier](https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/solidify.html)
 
 The Solidify modifier takes the surface of any mesh and adds depth, thickness to it.
 
@@ -318,12 +324,13 @@ Texture coordinates can be used in several ways and help with mapping procedural
 ##### Creating a basic wave pattern
 
 1. Go to shading workspace
-2. Add texture coordinate
+2. Add [texture coordinate](#texture-coordinate)
 3. Create a **Separate XYZ** node and connect the **UV** from **Texture coordinate** to **Vector** of Separate XYZ.
    - This allows us to access the coordinates from **Texure coordinate** separately. E.g. the coordinate X
-4. The X coordinate then can be used as **Vector** input for a **Math converter** of type **Sine** to create a wave, based on the X coordinate.
+   - See: [UV Mapping](#uv-mapping)
+4. The **X coordinate** then can be used as **Vector** input for a **Math converter** of type **Sine** to create a wave, based on the X coordinate.
 5. To get greater or less variation, add another **Math converter** of type **Multiply** to multiply the X coordinate by a factor. This node has to be between **Separate XYZ** and **Sine**
-6. **Sine will give us a value between -1 and 1 which will result in all values below 0 to be treated as 0 when converting the **Sine** output value to color.
+6. **Sine** will give us a value between -1 and 1 which will result in all values below 0 to be treated as 0 when converting the **Sine** output value to color.
    1. Therefore, we need to map the output value from **Sine** from the range(-1 to 1) to the range (0,1) whch can be achiever with the **Map Range converter**.
 7. Connect the output of the **Map Range converter** to the **Base color** of the shader which will give us the wave pattern.
 
@@ -333,6 +340,10 @@ Create a new **image texture** in the node editor. The texture then can be edit 
 The settings of texture drawing, open the **active tool** tab in the properties panel/window.
 
 > Keep the resolution as low as possible to save render time.
+
+#### UV Mapping
+
+The UV mapping defines how a texture is mapped to a object. For this to work, the faces of an object are unwrapped onto a square.
 
 #### Physically Based Rendering(PBR)
 
