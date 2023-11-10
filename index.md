@@ -23,7 +23,8 @@
 # 3d
 
 - [3d](3d)
-- [Blender](blender)
+- [Blender](3d/blender)
+- [Physically based rendering](3d/physicallybasedrendering)
 
 # Creative coding
 

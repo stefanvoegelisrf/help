@@ -51,15 +51,6 @@
         - [Creating a basic wave pattern](#creating-a-basic-wave-pattern)
       - [Image texture](#image-texture)
       - [UV Mapping](#uv-mapping)
-      - [Physically Based Rendering(PBR)](#physically-based-renderingpbr)
-        - [1. **Diffuse Reflection**](#1-diffuse-reflection)
-        - [2. **Specular Reflection**](#2-specular-reflection)
-        - [3. **Fresnel Effect**](#3-fresnel-effect)
-        - [4. **Normal Mapping**](#4-normal-mapping)
-        - [5. **Microfacet Model**](#5-microfacet-model)
-        - [6. **Energy Conservation**](#6-energy-conservation)
-        - [7. **Metalness**](#7-metalness)
-        - [8. **Roughness**](#8-roughness)
 
 
 ## Shortcuts
@@ -321,7 +312,7 @@ To add scattering, add subsurface and and change subsurface radius and color.
 
 ### [Shading/Texturing](https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/index.html)
 
-Texturing adds texture to objects. Texturing is achieved with shaders. The most common shader is the [Principled BSDF](https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/principled.html) shader. The Principled BSDF that combines multiple layers into a single easy to use node. It is based on the Disney principled model also known as the “PBR”(Phsically based rendering).
+Texturing adds texture to objects. Texturing is achieved with shaders. The most common shader is the [Principled BSDF](https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/principled.html) shader. The Principled BSDF that combines multiple layers into a single easy to use node. It is based on the Disney principled model also known as the “PBR”(See: [Physically based rendering](../physicallybasedrendering)).
 
 ![Principled BSDF Shader](Principled%20BSDF.png)
 
@@ -360,39 +351,3 @@ The settings of texture drawing, open the **active tool** tab in the properties 
 #### UV Mapping
 
 The UV mapping defines how a texture is mapped to a object. For this to work, the faces of an object are unwrapped onto a square. This can be changed in several ways by using the UV menu.
-
-#### Physically Based Rendering(PBR)
-
-Physically Based Shading is a technique used in 3D computer graphics to achieve more realistic lighting and material appearances. Here are its key components:
-
-##### 1. **Diffuse Reflection**
-   - **Description:** This is how light scatters when it hits a non-shiny surface.
-   - **Effect:** It creates the soft, matte look on surfaces where light is evenly distributed.
-
-##### 2. **Specular Reflection**
-   - **Description:** This refers to the mirror-like reflection of light from a surface.
-   - **Effect:** It is responsible for the shiny spots on objects, like the reflection on a polished car or a wet surface.
-
-##### 3. **Fresnel Effect**
-   - **Description:** This effect describes how the amount of reflected light changes depending on the viewing angle.
-   - **Effect:** It makes surfaces appear more reflective at grazing angles, like how a road looks wet and reflective when viewed from a distance.
-
-##### 4. **Normal Mapping**
-   - **Description:** A technique used to fake the lighting of bumps and dents on surfaces.
-   - **Effect:** It adds texture and detail to surfaces without increasing the number of polygons.
-
-##### 5. **Microfacet Model**
-   - **Description:** This is a model that represents the surface as a collection of tiny facets.
-   - **Effect:** It helps in calculating how light interacts with rough surfaces, affecting both diffuse and specular reflection.
-
-##### 6. **Energy Conservation**
-   - **Description:** In PBS, the total amount of light reflected and absorbed by a surface must equal the amount of light that hits it.
-   - **Effect:** This ensures that objects do not appear unnaturally bright or dark and maintain realistic light interaction.
-
-##### 7. **Metalness**
-   - **Description:** A parameter that defines whether a surface is metallic or non-metallic.
-   - **Effect:** Metallic surfaces reflect all incident light as specular, while non-metallic surfaces reflect light as both specular and diffuse.
-
-##### 8. **Roughness**
-   - **Description:** This parameter controls how rough or smooth a surface is.
-   - **Effect:** A smoother surface leads to sharper, clearer reflections, while a rougher surface scatters light, leading to duller reflections.

@@ -2,11 +2,16 @@
 
 - [3D](#3d)
   - [Blender](#blender)
+  - [Physically based rendering](#physically-based-rendering)
   - [3D Model from photographies](#3d-model-from-photographies)
 
-## Blender
+## [Blender](blender)
 
-[Blender](blender)
+Blender is the free and open source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation.
+
+## [Physically based rendering](physicallybasedrendering)
+
+Physically based rendering (PBR) is a computer graphics approach that seeks to render images in a way that models the lights and surfaces with optics in the real world. It is often referred to as "Physically Based Lighting" or "Physically Based Shading".
 
 ## 3D Model from photographies
 
