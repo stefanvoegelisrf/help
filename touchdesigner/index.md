@@ -12,7 +12,9 @@
     - [Surface operators(SOP)](#surface-operatorssop)
     - [Materials(MAT)](#materialsmat)
     - [Data operators(DAT)](#data-operatorsdat)
-    - [Components(COMP)](#componentscomp)
+  - [Components(COMP)](#componentscomp)
+  - [Wires](#wires)
+  - [Links](#links)
 
 
 ## Resources
@@ -25,9 +27,11 @@
 
 ## Shortcuts
 
-| Shortcut                    | Command                   |
-| --------------------------- | ------------------------- |
-| **double click** or **Tab** | Open **OP Dreate Dialog** |
+| Shortcut                                       | Command                   |
+| ---------------------------------------------- | ------------------------- |
+| **double click** or **Tab**(when in a network) | Open **OP Dreate Dialog** |
+| **Tab**(when in a dialog)                      | Navigate tabs             |
+| **X**                                          | Show/Hide links           |
 
 ## Noise
 
@@ -37,7 +41,7 @@
 
 ## [Operators](https://derivative.ca/UserGuide/Operator)
 
-Operators are nodes in TouchDesigner networks. They output data to other operators and have parameters and flags.
+Operators are nodes in TouchDesigner networks. They output data to other operators and have parameters and flags. Every operator has a Viewer Active flag (this looks like the + symbol). When an operator is Viewer Active it allows for additional manipulation when clicking in the operator’s viewer.
 
 ### [Generators](https://derivative.ca/UserGuide/Generator)
 
@@ -77,6 +81,14 @@ Materials apply a Shader to surface operators or 3D geometry.
 
 Data operators hold data(strings, scrips, XML). They can either be a table or lines of texts.
 
-### [Components(COMP)](https://docs.derivative.ca/Component)
+## [Components(COMP)](https://docs.derivative.ca/Component)
 
-Components contain their own networks and are therefore reusable networks.
+Components contain their own networks and are therefore reusable networks. They have top and bottom connectors for hierarchical organization.
+
+## [Wires](https://docs.derivative.ca/Wire)
+
+Wires can only be connected between operators of the same family and have the same color as their respective families. Wires can be static or animated. An animated wire in your network is a visual hint that there is a flow of data that is actively cooking between operators. This is very helpful, visually, for knowing at a glance what data is being updated (cooked) in your project. 
+
+## [Links](https://docs.derivative.ca/Link)
+
+Links can be used to connect operators of the same or different family (like with Select OPs), and are also seen when data is converted between families. Links appear as dotted lines in the network and can be hidden or exposed by the hotkey ‘x’. Links share the same characteristics of animation as wires – animated links are a visual cue that there is a flow of information that is actively being evaluated (cooking) in your network. 
