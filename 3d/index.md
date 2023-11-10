@@ -15,7 +15,7 @@ Physically based rendering (PBR) is a computer graphics approach that seeks to r
 
 ## 3D Model from photographies
 
-Create a 3D model from a series of photos using Adobe Substance 3D sampler and Blender.
+Create a 3D model from a series of photos using **Adobe Substance 3D sampler** and **Blender**.
 
 - Take a series of pictures from different angles and different distances. Take more than 50
   - Ideal lighting condition is cloudy day light.

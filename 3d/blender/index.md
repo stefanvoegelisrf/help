@@ -181,7 +181,7 @@ Modifiers are automatic operations that affect an object’s geometry in a non-d
 
 #### [Subdivision surface modifier](https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/subdivision_surface.html)
 
-![Subdivision surface modifier](subdivision%20surface%20modifier.png)
+![Subdivision surface modifier](images/subdivision%20surface%20modifier.png)
 
 The Subdivision Surface modifier is used to split the faces of a mesh into smaller faces, giving it a smooth appearance.
 
@@ -210,7 +210,7 @@ The Shrinkwrap modifier allows an object to “shrink” to the surface of anoth
 
 ### [Snapping](https://docs.blender.org/manual/en/latest/editors/3dview/controls/snapping.html)
 
-![Snapping](Snapping.png)
+![Snapping](images/Snapping.png)
 
 Snapping lets you easily align objects and mesh elements to others. It can be toggled by clicking the magnet icon in the 3D Viewport’s header, or more temporarily by holding ```ctrl```.
 
@@ -222,15 +222,15 @@ Snapping lets you easily align objects and mesh elements to others. It can be to
 
 Use GPU for Cycles: **Preferences** -> **System** -> Switch Cycles Render Devices to use **Metal**(on Mac).
 
-![Change to GPU rendering on Mac](GPU%20rendering%20MAC.png)
+![Change to GPU rendering on Mac](images/GPU%20rendering%20MAC.png)
 
 In **scene settings**, change the device to **GPU compute**.
 
-![Cycles GPU rendering](Cycles%20GPU%20rendering.png)
+![Cycles GPU rendering](images/Cycles%20GPU%20rendering.png)
 
 #### [Viewport shading](https://docs.blender.org/manual/en/latest/editors/3dview/display/shading.html)
 
-![Viewport shading](Viewport%20shading.png)
+![Viewport shading](images/Viewport%20shading.png)
 
 ##### Wireframe
 
@@ -314,13 +314,13 @@ To add scattering, add subsurface and and change subsurface radius and color.
 
 Texturing adds texture to objects. Texturing is achieved with shaders. The most common shader is the [Principled BSDF](https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/principled.html) shader. The Principled BSDF that combines multiple layers into a single easy to use node. It is based on the Disney principled model also known as the “PBR”(See: [Physically based rendering](../physicallybasedrendering)).
 
-![Principled BSDF Shader](Principled%20BSDF.png)
+![Principled BSDF Shader](images/Principled%20BSDF.png)
 
 #### Noise texture
 
 > Use a **noise texture** combined with a **color ramp** to create color variation. This can further be combined with a **bump** so that the bump can be connected to the **normal of the Shader**(E.g. Principaled BSDF) Add **texture coordinate** to **Vector input** of noise texture to change the mapping.
 
-![Noise with Bump as normal map](Noise%20with%20Bump%20as%20normal.png)
+![Noise with Bump as normal map](images/Noise%20with%20Bump%20as%20normal.png)
 
 #### [Texture coordinate](https://docs.blender.org/manual/en/latest/render/shader_nodes/input/texture_coordinate.html)
 
@@ -339,7 +339,7 @@ Texture coordinates can be used in several ways and help with mapping procedural
    1. Therefore, we need to map the output value from **Sine** from the range(-1 to 1) to the range (0,1) whch can be achiever with the **Map Range converter**.
 7. Connect the output of the **Map Range converter** to the **Base color** of the shader which will give us the wave pattern.
 
-![Wave pattern with nodes](wave%20pattern%20with%20nodes.png)
+![Wave pattern with nodes](images/wave%20pattern%20with%20nodes.png)
 
 #### Image texture
 
