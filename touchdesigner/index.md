@@ -27,11 +27,17 @@
 
 ## Shortcuts
 
-| Shortcut                                       | Command                   |
-| ---------------------------------------------- | ------------------------- |
-| **double click** or **Tab**(when in a network) | Open **OP Dreate Dialog** |
-| **Tab**(when in a dialog)                      | Navigate tabs             |
-| **X**                                          | Show/Hide links           |
+| Shortcut                                       | Command                                    |
+| ---------------------------------------------- | ------------------------------------------ |
+| **double click** or **Tab**(when in a network) | Open **OP Dreate Dialog**                  |
+| **Tab**(when in a dialog)                      | Navigate tabs                              |
+| **X**                                          | Show/Hide links                            |
+| **CMD** + B                                    | Show/Hide Pallette                         |
+| U                                              | Go up a level                              |
+| I                                              | Go into                                    |
+| H                                              | See entire network                         |
+| **Middle mouse click**                         | View info of operator                      |
+| A                                              | Toggle viewer active for selected operator |
 
 ## Noise
 
