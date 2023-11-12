@@ -1,7 +1,8 @@
-# Touchdesigner
+# TouchDesigner
 
-- [Touchdesigner](#touchdesigner)
+- [TouchDesigner](#touchdesigner)
   - [Resources](#resources)
+  - [Python cheatsheet](#python-cheatsheet)
   - [Shortcuts](#shortcuts)
   - [Noise](#noise)
   - [Operators](#operators)
@@ -22,8 +23,12 @@
 - [SimonAA - Looping Noise in TouchDesigner](https://www.simonaa.media/tutorials/looping-noise-part-1)
 - [SimonAA - Noise Displacement in TouchDesigner](https://www.simonaa.media/tutorials/noisedisplacement)
 - [SimonAA - Tutorials & Articles](https://www.simonaa.media/tutorials-articles)
-- [Touch Designer Workshop Resources](https://github.com/kratadata/TD-Workshop)
+- [TouchDesigner Workshop Resources](https://github.com/kratadata/TD-Workshop)
 - [TouchDesigner - Fundamentals](https://learn.derivative.ca/courses/100-fundamentals/)
+
+## Python cheatsheet
+
+> See: [Python cheatsheet](pythoncheatsheet)
 
 ## Shortcuts
 
