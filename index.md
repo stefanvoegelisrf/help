@@ -4,6 +4,7 @@
 
 - [Help](#help)
 - [3d](#3d)
+- [Audio](#audio)
 - [Creative coding](#creative-coding)
 - [CSS](#css)
 - [Drawing](#drawing)
@@ -19,6 +20,10 @@
 - [Blender](3d/blender)
 - [Unity](unity)
 - [Physically based rendering](3d/physicallybasedrendering)
+
+# Audio
+
+- [Tidal cycles](tidalcycles)
 
 # Creative coding
 
