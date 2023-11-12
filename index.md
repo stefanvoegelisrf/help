@@ -9,6 +9,7 @@
 - [CSS](#css)
 - [Drawing](#drawing)
 - [Javascript](#javascript)
+- [Machine learning](#machine-learning)
 - [OS](#os)
 - [Tools](#tools)
 - [UI frameworks](#ui-frameworks)
@@ -47,6 +48,10 @@
 - [p5](p5js)
 - [WebAssembly](webassembly)
 - [JavaScript](javascript)
+
+# Machine learning
+
+- [MediaPipe](mediapipe)
 
 # OS
 
