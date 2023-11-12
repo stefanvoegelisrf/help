@@ -81,7 +81,7 @@
 | **option** + H (with object selected) | Unhide object                             |
 
 
-> Press ```esc``` or right click to cancel the command
+> Press `esc` or right click to cancel the command
 
 > These commands are also used to modify meshes, vertices and so on
 
@@ -213,7 +213,7 @@ The Shrinkwrap modifier allows an object to “shrink” to the surface of anoth
 
 ![Snapping](images/Snapping.png)
 
-Snapping lets you easily align objects and mesh elements to others. It can be toggled by clicking the magnet icon in the 3D Viewport’s header, or more temporarily by holding ```ctrl```.
+Snapping lets you easily align objects and mesh elements to others. It can be toggled by clicking the magnet icon in the 3D Viewport’s header, or more temporarily by holding `ctrl`.
 
 > If snapping is enabled, a vertice might not move and cause confusion, keep this in mind to check if snapping is enabled.
 

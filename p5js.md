@@ -30,7 +30,7 @@ Below is documentation on important p5.js functionality, with references to the 
 
 > See: [p5js - map](https://p5js.org/reference/#/p5/map)
 
-To convert a value from a a specified source range into a value at the same position of a destination range, we can use ```map```.
+To convert a value from a a specified source range into a value at the same position of a destination range, we can use `map`.
 
 ```
 map(
@@ -63,7 +63,7 @@ To use a sketch as a background, make sure to set it's **position** to absolute 
 
 > See: [Medium - Mitsuya Watanabe - p5.js with Vue](https://medium.com/js-dojo/experiment-with-p5-js-on-vue-7ebc05030d33)
 
-1. Install p5 ```npm install --save p5```
+1. Install p5 `npm install --save p5`
 2. p5.js is ready to be used. Make sure to use it with instance mode, instead of global mode, see: [GitHub - p5.js global and instance mode](https://github.com/processing/p5.js/wiki/Global-and-instance-mode)
 
 #### Example Nuxt page
