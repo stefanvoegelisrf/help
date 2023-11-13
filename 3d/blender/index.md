@@ -51,6 +51,9 @@
         - [Creating a basic wave pattern](#creating-a-basic-wave-pattern)
       - [Image texture](#image-texture)
       - [UV Mapping](#uv-mapping)
+  - [Geometry nodes](#geometry-nodes)
+  - [Double PI](#double-pi)
+  - [Weight painting](#weight-painting)
 
 
 ## Shortcuts
@@ -366,3 +369,11 @@ The UV mapping defines how a texture is mapped to a object. For this to work, th
 E.g. a cube is by default unwrapped in the following way:
 
 ![UV default unwrapping of cube](images/UV%20default%20cupe%20unwrapping.png)
+
+## Geometry nodes
+
+## Combining colors with Mix
+
+## Double PI
+
+## Weight painting

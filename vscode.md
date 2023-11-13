@@ -1,5 +1,9 @@
 # Visual Studio Code
 
+## Shortcuts
+
+> See: [VisualStudio Code - Basics](https://code.visualstudio.com/docs/editor/codebasics)
+
 ## Extensions
 
 - [Telerik - Popular Nuxt VS Code Extensions](https://www.telerik.com/blogs/popular-vs-code-extensions-vue.js-nuxt.js-developers)
