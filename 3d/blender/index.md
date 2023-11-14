@@ -54,6 +54,9 @@
   - [Geometry nodes](#geometry-nodes)
   - [Double PI](#double-pi)
   - [Weight painting](#weight-painting)
+  - [Adding parent](#adding-parent)
+  - [Keyframes](#keyframes)
+  - [Animation pane](#animation-pane)
 
 
 ## Shortcuts
@@ -372,8 +375,26 @@ E.g. a cube is by default unwrapped in the following way:
 
 ## Geometry nodes
 
+TODO: Add setup of donut geometry nodes
+TODO: Add tutorial on how to create plants with geometry nodes
+TODO: Add tutorial on how to create grid
+
 ## Combining colors with Mix
+
+TODO: Add how to achieve the different colored sprinkles using Mix Node
 
 ## Double PI
 
 ## Weight painting
+
+TODO: explain donut weight painting for density of sprinkles
+
+## Adding parent
+
+TODO: Show how adding an object as a parent of an object
+
+## Keyframes
+
+TODO: Show how keyframing works and how to adjust the easing
+
+## Animation pane
