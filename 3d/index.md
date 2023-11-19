@@ -4,6 +4,7 @@
   - [Blender](#blender)
   - [Physically based rendering](#physically-based-rendering)
   - [3D Model from photographies](#3d-model-from-photographies)
+  - [3D scene/model viewer](#3d-scenemodel-viewer)
 
 ## [Blender](blender)
 
@@ -26,3 +27,9 @@ Create a 3D model from a series of photos using **Adobe Substance 3D sampler** a
 - Import the .USD file into the scene and position it correctly.
 - Export the scene as a glb
 - The model can now be viewed by using [model-viewer](https://modelviewer.dev/)
+
+## 3D scene/model viewer
+
+Google provides a web component called [Web Viewer](https://modelviewer.dev/) which can easily be integrated into websites to display 3D models. It is very easy to use with `.glb` files.
+
+> See [Google developer documentation](https://developers.google.com/ar/develop/scene-viewer)

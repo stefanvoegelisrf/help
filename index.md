@@ -4,6 +4,7 @@
 
 - [Help](#help)
 - [3d](#3d)
+- [Animation](#animation)
 - [Audio](#audio)
 - [Creative coding](#creative-coding)
 - [CSS](#css)
@@ -21,6 +22,10 @@
 - [Blender](3d/blender)
 - [Unity](unity)
 - [Physically based rendering](3d/physicallybasedrendering)
+
+# Animation
+
+- [Easings.net - easing cheat sheet](https://easings.net/)
 
 # Audio
 

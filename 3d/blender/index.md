@@ -57,6 +57,13 @@
   - [Adding parent](#adding-parent)
   - [Keyframes](#keyframes)
   - [Animation pane](#animation-pane)
+  - [Use frame value as input for geometry nodes](#use-frame-value-as-input-for-geometry-nodes)
+  - [Creating frames for nodes](#creating-frames-for-nodes)
+  - [Rendering on transparent by changing film to transparent](#rendering-on-transparent-by-changing-film-to-transparent)
+  - [Render pass](#render-pass)
+  - [Color grading with color balance](#color-grading-with-color-balance)
+  - [Persistent data](#persistent-data)
+  - [Improving render by playing with noise threshold, samples](#improving-render-by-playing-with-noise-threshold-samples)
 
 
 ## Shortcuts
@@ -398,3 +405,34 @@ TODO: Show how adding an object as a parent of an object
 TODO: Show how keyframing works and how to adjust the easing
 
 ## Animation pane
+
+## Use frame value as input for geometry nodes
+
+## Creating frames for nodes
+
+bpy.context.scene.frame_end
+
+## Lighting
+
+## Changing color managemengt settings
+
+TODO: change look to high contrast
+TODO: change view transform to false color and change exposure
+
+TODO: spot problem by rendering first/last/middle frame
+
+## Rendering on transparent by changing film to transparent
+
+## Compositing
+
+ctrl shift click -> focus on node
+
+## Render pass
+
+## Color grading with color balance
+
+## Persistent data
+
+## Improving render by playing with noise threshold, samples
+
+## Adding motion blur
