@@ -64,6 +64,11 @@
   - [Color grading with color balance](#color-grading-with-color-balance)
   - [Persistent data](#persistent-data)
   - [Improving render by playing with noise threshold, samples](#improving-render-by-playing-with-noise-threshold-samples)
+  - [Changing clamping and caustics](#changing-clamping-and-caustics)
+  - [F-stop](#f-stop)
+  - [Openexr](#openexr)
+  - [Opening a new blender file to stitch the renders together](#opening-a-new-blender-file-to-stitch-the-renders-together)
+  - [Adding back colors](#adding-back-colors)
 
 
 ## Shortcuts
@@ -436,3 +441,17 @@ ctrl shift click -> focus on node
 ## Improving render by playing with noise threshold, samples
 
 ## Adding motion blur
+
+## Setting max bounces for light paths
+
+## Changing clamping and caustics
+
+## Todo EVEE render settings for rendering
+
+## F-stop
+
+## Openexr
+
+## Opening a new blender file to stitch the renders together
+
+## Adding back colors
