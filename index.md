@@ -12,6 +12,7 @@
 - [Javascript](#javascript)
 - [Machine learning](#machine-learning)
 - [OS](#os)
+- [Social Media](#social-media)
 - [Tools](#tools)
 - [UI frameworks](#ui-frameworks)
 
@@ -61,6 +62,10 @@
 # OS
 
 - [macOS](macos)
+
+# Social Media
+
+- [Social media](socialmedia)
 
 # Tools
 
