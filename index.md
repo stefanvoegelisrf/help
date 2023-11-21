@@ -54,6 +54,7 @@
 - [p5](p5js)
 - [WebAssembly](webassembly)
 - [JavaScript](javascript)
+- [rete.js](retejs)
 
 # Machine learning
 
