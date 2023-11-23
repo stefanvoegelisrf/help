@@ -1,4 +1,9 @@
 # macOS
 
-TODO: add keyboard shortcuts help
-TODO: add shortcuts for screenshots and other useful screenshots
+## Shortcuts
+
+| Command                 | Action                  |
+| ----------------------- | ----------------------- |
+| **CMD** + **SHIFT** + . | Show hidden files       |
+| **CMD** + **SHIFT** + 4 | Take screenshot(custom) |
+| **CMD** + **SHIFT** + 3 | Take screenshot(screen) |
