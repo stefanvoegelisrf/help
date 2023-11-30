@@ -10,6 +10,7 @@
 - [CSS](#css)
 - [Drawing](#drawing)
 - [Javascript](#javascript)
+- [Large language models](#large-language-models)
 - [Machine learning](#machine-learning)
 - [OS](#os)
 - [Social Media](#social-media)
@@ -49,12 +50,16 @@
 
 # Javascript
 
-- [threeJS](threejs)
-- [Nuxt](nuxt)
-- [p5](p5js)
+- [threeJS - 3D web library](threejs)
+- [Nuxt - Vue application framework](nuxt)
+- [p5 - Creative graphic library](p5js)
 - [WebAssembly](webassembly)
 - [JavaScript](javascript)
-- [rete.js](retejs)
+- [rete.js - Node editor framework](retejs)
+
+# Large language models
+
+- [LLM](llm)
 
 # Machine learning
 
