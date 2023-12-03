@@ -17,6 +17,9 @@
   - [Rigidbody](#rigidbody)
   - [Different ways of implementing movement](#different-ways-of-implementing-movement)
   - [Creating a parameter preset](#creating-a-parameter-preset)
+  - [Animations](#animations)
+  - [Scripts](#scripts)
+    - [Reusable scripts](#reusable-scripts)
 
 ## Resources
 
@@ -73,3 +76,20 @@ Install .NET SDK
 ## Different ways of implementing movement
 
 ## Creating a parameter preset
+
+## Animations
+
+https://learn.unity.com/tutorial/introduction-to-sprite-animations#5fa66921edbc2a0020bcaae1
+
+
+https://docs.unity3d.com/Manual/class-AnimatorController.html
+
+https://docs.unity3d.com/Manual/class-State.html
+
+https://docs.unity3d.com/ScriptReference/Animator.SetTrigger.html
+
+## Scripts
+
+### Reusable scripts
+
+- [Camera follow with rotation and shake](scripts/CameraFollow.cs)

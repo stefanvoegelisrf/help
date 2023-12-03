@@ -4,6 +4,7 @@
 
 - [Help](#help)
 - [3d](#3d)
+- [Accessibility](#accessibility)
 - [Animation](#animation)
 - [Audio](#audio)
 - [Creative coding](#creative-coding)
@@ -24,6 +25,10 @@
 - [Blender](3d/blender)
 - [Unity](unity)
 - [Physically based rendering](3d/physicallybasedrendering)
+
+# Accessibility
+
+- [Accessibility](accessibility)
 
 # Animation
 
