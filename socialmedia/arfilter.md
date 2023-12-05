@@ -1,6 +1,7 @@
 # AR Filters
 
 - [Spark AR (for Instagram)](#spark-ar-for-instagram)
+  - [Resources](#resources)
   - [Parameters in Spark AR](#parameters-in-spark-ar)
     - [Getting Started with Spark AR](#getting-started-with-spark-ar)
 - [TikTok Effect House (for TikTok)](#tiktok-effect-house-for-tiktok)
@@ -13,6 +14,10 @@
 - [General Tips for Creating Popular Filters](#general-tips-for-creating-popular-filters)
 
 ## Spark AR (for Instagram)
+
+### Resources
+
+- [spark.meta.com - Create your first effect](https://spark.meta.com/learn/tutorials/create-your-first-effect)
 
 ### Parameters in Spark AR
 Spark AR offers various parameters for creating filters:

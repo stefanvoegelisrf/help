@@ -1,21 +1,55 @@
 # Accessibility
 
 - [Accessibility](#accessibility)
+  - [Testing](#testing)
+    - [Testing accessibility](#testing-accessibility)
+    - [Assistive technologies](#assistive-technologies)
+      - [Keyboard](#keyboard)
+      - [Screen readers](#screen-readers)
   - [Web design](#web-design)
     - [App design](#app-design)
-    - [Testing](#testing)
+    - [Testing](#testing-1)
   - [Writing](#writing)
+    - [Resources](#resources)
     - [Accessibility text](#accessibility-text)
     - [Alternative text / Alt text](#alternative-text--alt-text)
+      - [Icons or images as links](#icons-or-images-as-links)
     - [Captions](#captions)
     - [Embedded text in images](#embedded-text-in-images)
   - [Implementing accessibility](#implementing-accessibility)
     - [Do](#do)
     - [Don't](#dont)
-  - [Assistive technologies](#assistive-technologies)
-    - [Keyboard](#keyboard)
-    - [Screen readers](#screen-readers)
 
+
+## Testing
+
+### Testing accessibility
+
+> See: [accessibility.huit.harvard.edu - Automated tools](https://accessibility.huit.harvard.edu/auto-tools-testing#free)
+
+### Assistive technologies
+
+Various assistive technologies exist. Below is a list of technologies. For testing, it makes sense to test it on these devices.
+
+#### Keyboard
+
+- Hardware or software controllers
+- D-Pad, keyboard, trackball
+- Linear Navigation from selection to selection
+
+#### Screen readers
+
+- Vision impairments, difficulty in reading
+- Verbalize visible content and reading it aloud
+- Make use of invisible content like alt texts
+- Braille display or reading text aloud
+- Popular screen readers
+    - Chrome Vox
+    - Apple VoiceOver
+    - Google TalkBack
+    - [NVDA: Non Visual Desktop Access](https://www.nvaccess.org/)
+    - [JAWS: Job Access With Speech](https://www.freedomscientific.com/products/software/jaws/)
+    - [BRLTTY](https://brltty.app/)
 
 ## Web design
 For designing content on the web, follow the [W3 guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/).
@@ -48,6 +82,10 @@ For designing content on the web, follow the [W3 guidelines](https://www.w3.org/
 
 ## Writing
 
+### Resources
+
+- [accessibility.huit.harvard.edu - Describe content images](https://accessibility.huit.harvard.edu/describe-content-images)
+
 ### Accessibility text
 
 This is the text used by screen reader software. Screen readers read aloud on-screen text and elements including alternative text.
@@ -57,6 +95,16 @@ This is the text used by screen reader software. Screen readers read aloud on-sc
 Alternative text translates visual UI into text-based UI. Alt text describes an image for users who don't see them. If images fail to load, also users who would see the image, can refer to the alt text.
 
 > Use short informative phrasing.
+
+> Add alt text to all all non-decorative images
+
+> Don't write "Picture of" or "image of"
+
+> Don't provide alt-text if image is decorative only
+
+#### Icons or images as links
+
+When icons or images referring to another page/action are used, describe the action that will happen when clicking on them instead of describing the image/icon.
 
 ### Captions
 
@@ -79,25 +127,5 @@ By using standard platform controls and semantic HTML (on the web), apps automat
 
 > Don't use non-standard elements as this would need extra testing
 
-## Assistive technologies
 
-### Keyboard
-
-- Hardware or software controllers
-- D-Pad, keyboard, trackball
-- Linear Navigation from selection to selection
-
-### Screen readers
-
-- Vision impairments, difficulty in reading
-- Verbalize visible content and reading it aloud
-- Make use of invisible content like alt texts
-- Braille display or reading text aloud
-- Popular screen readers
-    - Chrome Vox
-    - Apple VoiceOver
-    - Google TalkBack
-    - [NVDA: Non Visual Desktop Access](https://www.nvaccess.org/)
-    - [JAWS: Job Access With Speech](https://www.freedomscientific.com/products/software/jaws/)
-    - [BRLTTY](https://brltty.app/)
 
