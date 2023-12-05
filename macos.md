@@ -14,6 +14,14 @@
 > 
 > Make sure to install the **ARM64** version for Apple Silicon(M1, M2, M3)
 
+## Change default app for file types
+
+1. Select file to change defaut app and right click
+2. Select "Get Info"
+3. Go to "Open with:"
+4. Change the Application
+5. Click "Apply all" and confirm
+
 ## Issues
 
 ### C# Dev Kit unable to find .NET SDK
