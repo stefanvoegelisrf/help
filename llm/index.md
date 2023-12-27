@@ -18,6 +18,8 @@ TODO:
 - [Stable Diffusion](https://stability.ai/stable-diffusion)
 - [Claude](https://claude.ai/)
   - TODO: check out https://www.anthropic.com/index/introducing-claude
+- [VisualElectric](https://visualelectric.com/)
+  - TODO: check it out
 
 ## Running large language models locally
 
