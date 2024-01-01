@@ -47,8 +47,10 @@
       - [Light scattering](#light-scattering)
     - [Shading/Texturing](#shadingtexturing)
       - [Noise texture](#noise-texture)
+      - [Bump node](#bump-node)
       - [Texture coordinate](#texture-coordinate)
         - [Creating a basic wave pattern](#creating-a-basic-wave-pattern)
+        - [Creating generated coordinates](#creating-generated-coordinates)
       - [Image texture](#image-texture)
       - [UV Mapping](#uv-mapping)
   - [Geometry nodes](#geometry-nodes)
@@ -349,6 +351,9 @@ Texturing adds texture to objects. Texturing is achieved with shaders. The most 
 
 ![Noise with Bump as normal map](images/Noise%20with%20Bump%20as%20normal.png)
 
+#### [Bump node](https://docs.blender.org/manual/en/latest/render/shader_nodes/vector/bump.html)
+The Bump node generates a perturbed normal from a height texture, for bump mapping. The height value will be sampled at the shading point and two nearby points on the surface to determine the local direction of the normal.y
+
 #### [Texture coordinate](https://docs.blender.org/manual/en/latest/render/shader_nodes/input/texture_coordinate.html)
 
 Texture coordinates can be used in several ways and help with mapping procedural textures on objects.
@@ -367,6 +372,13 @@ Texture coordinates can be used in several ways and help with mapping procedural
 7. Connect the output of the **Map Range converter** to the **Base color** of the shader which will give us the wave pattern.
 
 ![Wave pattern with nodes](images/wave%20pattern%20with%20nodes.png)
+
+##### Creating generated coordinates
+Using generated coordinates allows use automatically-generated texture coordinates from the vertex positions of the mesh without deformation, keeping them sticking to the surface under animation. The coordinates range from 0.0 to 1.0 over the bounding box of the undeformed mesh.
+
+1. Go to shading workspace and add [texture coordinate](#texture-coordinate)
+2. Use the **generated** value to use the generated texture coordinates
+
 
 #### Image texture
 
