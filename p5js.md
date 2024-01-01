@@ -5,7 +5,6 @@
   - [About p5.js](#about-p5js)
   - [Important p5.js reference](#important-p5js-reference)
     - [map](#map)
-      - [Example](#example)
   - [Common use cases](#common-use-cases)
     - [Use p5 canvas as site background](#use-p5-canvas-as-site-background)
     - [How to use p5.js with Nuxt/Vue](#how-to-use-p5js-with-nuxtvue)
@@ -40,13 +39,6 @@ map(
     destinationRangeStart,
     destinationRangeEnd
 )
-```
-
-#### Example
-
-TODO: add example
-```
-map()
 ```
 
 ## Common use cases
