@@ -4,7 +4,13 @@
   - [ES modules](#es-modules)
 
 ## ES modules
+In a browser, the execution of JavaScript modules depends upon import and export statements. These statements load and export ECMAScript modules which are ES modules, respectively. The ES module usage format is the official standard to write JavaScript for maximum reusability and is what most web browsers natively support.
 
 TODO: add docu for es modules, compare to commonjs and so on
 
 https://blog.logrocket.com/commonjs-vs-es-modules-node-js/
+
+## Common JS Modules
+NodeJS supports the CommonJS module format by default. This uses the `require()` function.
+
+https://www.knowledgehut.com/blog/web-development/commonjs-vs-es-modules
