@@ -3,6 +3,7 @@
   - [Setting origin to specific point](#setting-origin-to-specific-point)
   - [Assigning materials to specific faces](#assigning-materials-to-specific-faces)
   - [Randomize noise texture in material](#randomize-noise-texture-in-material)
+  - [Creating generative trees](#creating-generative-trees)
 
 
 ## Setting origin to specific point
@@ -22,3 +23,6 @@
 When using a noise texture, the material always has the same texture for each object that it is applied to. To randomize this to get variation, we can use the **random** value from the object like so:
 
 ![Randomize noise texture](images/Randomize%20noise%20texture.png)
+
+## Creating generative trees
+![Generative trees node setup](images/generative%20trees%20node%20setup.jpeg)
