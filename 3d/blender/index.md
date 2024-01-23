@@ -445,7 +445,7 @@ The bounding box node computes the bounding box of the input geometry.
 The Noise Texture node evaluates a fractal Perlin noise at the input texture coordinates.
 
 ## Combining colors with Mix
-
+https://docs.blender.org/manual/en/latest/compositing/types/color/mix/mix_color.html
 TODO: Add how to achieve the different colored sprinkles using Mix Node
 
 ## Double PI
