@@ -4,6 +4,7 @@
   - [Assigning materials to specific faces](#assigning-materials-to-specific-faces)
   - [Randomize noise texture in material](#randomize-noise-texture-in-material)
   - [Creating generative trees](#creating-generative-trees)
+  - [Setting up isometric view](#setting-up-isometric-view)
 
 
 ## Setting origin to specific point
@@ -26,3 +27,9 @@ When using a noise texture, the material always has the same texture for each ob
 
 ## Creating generative trees
 ![Generative trees node setup](images/generative%20trees%20node%20setup.jpeg)
+
+## Setting up isometric view
+- Set camera type to orthographic
+- Set z rotation to 45 degrees
+- Set y rotation to 0 degrees
+- Set x rotation to 54.7 degrees
