@@ -5,12 +5,13 @@
 
 ## Resources
 
-- [Paletton](paletton.com)
-- [Adobe Color](color.adobe.com)
-- [Crazyegg heatmap](https://www.crazyegg.com/)
-- [Leadfeeder](https://www.leadfeeder.com/)
-- [Color palette](https://www.sigridthomas.com/design/farbpalette-erstellen/)
-- [Color shades](https://mdigi.tools/color-shades/#fc7c00)
-- [Color contrast analyzer](https://color.adobe.com/de/create/color-contrast-analyzer)
-- [Color accessibility analyzer](https://color.adobe.com/de/create/color-accessibility)
-- [Material theme builder](https://m3.material.io/theme-builder#/custom)
+- [paletton](paletton.com)
+- [color.adobe.com](color.adobe.com)
+  - [adobe.com - understanding color visual guide](https://creativecloud.adobe.com/discover/article/understanding-color-a-visual-guide)
+  - [adobe.com - color contrast analyzer](https://color.adobe.com/de/create/color-contrast-analyzer)
+  - [adobe.com - color accessibility checker](https://color.adobe.com/de/create/color-accessibility)
+- [crazyegg.com](https://www.crazyegg.com/)
+- [leadfeeder.com](https://www.leadfeeder.com/)
+- [sigridthomas.com - farbpalette erstellen](https://www.sigridthomas.com/design/farbpalette-erstellen/)
+- [mdigi.tools - generating color shades](https://mdigi.tools/color-shades/#fc7c00)
+- [material.io - material theme builder](https://m3.material.io/theme-builder#/custom)
