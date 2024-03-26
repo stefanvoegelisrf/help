@@ -5,10 +5,12 @@
   - [About p5.js](#about-p5js)
   - [Important p5.js reference](#important-p5js-reference)
     - [map](#map)
-  - [Common use cases](#common-use-cases)
+  - [Tips and tricks](#tips-and-tricks)
     - [Use p5 canvas as site background](#use-p5-canvas-as-site-background)
     - [How to use p5.js with Nuxt/Vue](#how-to-use-p5js-with-nuxtvue)
       - [Example Nuxt page](#example-nuxt-page)
+    - [Use p5 in instance mode with typescript and vite](#use-p5-in-instance-mode-with-typescript-and-vite)
+    - [Adding a GUI with lil-gui](#adding-a-gui-with-lil-gui)
 
 ## Resources
 
@@ -41,9 +43,8 @@ map(
 )
 ```
 
-## Common use cases
-
-Below are some use cases that I use often.
+## Tips and tricks
+Below are some tips and tricks.
 
 ### Use p5 canvas as site background
 
@@ -93,3 +94,86 @@ onBeforeUnmount(() => {
 });
 </script>
 ```
+
+### Use p5 in instance mode with typescript and vite
+
+- Install p5 with npm `npm i p5`
+- Install vite with `npm i vite --save-dev`
+- Add `vite.config.ts`
+```javascript
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+    base: './',
+    server: {
+        open: true,
+    },
+    build: {
+        outDir: 'dist'
+    }
+});
+```
+- Add scripts to `package.json`
+```json
+"scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+```
+- Add main to `package.json`
+```json
+"main": "sketch.ts",
+```
+- Add type module to `package.json`
+```json
+"type": "module",
+```
+- Add `sketch.ts`
+```javascript
+import p5 from 'p5';
+
+let sketch = function (p: p5) {
+    p.setup = function () {
+        p.createCanvas(400, 400);
+    }
+}
+let instantiatedSketch = new p5(sketch);
+```
+- Add `index.html`
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="module" src="/sketch.ts"></script>
+</head>
+
+<body>
+    <main>
+    </main>
+</body>
+
+</html>
+```
+- Add style.css
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+```
+
+### Adding a GUI with lil-gui
+- Install with `npm i lil-gui`
+- Import with `import { GUI } from 'lil-gui'`
+- Create the GUI with `let gui = new GUI();`
