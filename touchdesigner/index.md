@@ -43,6 +43,7 @@
 | H                                              | See entire network                         |
 | **Middle mouse click**                         | View info of operator                      |
 | A                                              | Toggle viewer active for selected operator |
+| C                                              | Setting color for operator                 |
 
 ## Noise
 
