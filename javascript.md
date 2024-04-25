@@ -4,7 +4,8 @@
   - [ES modules](#es-modules)
   - [this keyword](#this-keyword)
   - [bind](#bind)
-  - [Prototypes](#prototypes)
+  - [Javascript prototypes](#javascript-prototypes)
+  - [Preflight requests](#preflight-requests)
 
 ## ES modules
 In a browser, the execution of JavaScript modules depends upon import and export statements. These statements load and export ECMAScript modules which are ES modules, respectively. The ES module usage format is the official standard to write JavaScript for maximum reusability and is what most web browsers natively support.
@@ -24,5 +25,8 @@ The `this` keyword always refers to the current context.
 ## bind
 By using `bind`, we can assign something to the `this` keyword.
 
-## Prototypes
+## Javascript prototypes
 TODO: 
+
+## Preflight requests
+TODO: https://developer.mozilla.org/en-US/docs/Glossary/Preflight_request
