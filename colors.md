@@ -15,3 +15,5 @@
 - [sigridthomas.com - farbpalette erstellen](https://www.sigridthomas.com/design/farbpalette-erstellen/)
 - [mdigi.tools - generating color shades](https://mdigi.tools/color-shades/#fc7c00)
 - [material.io - material theme builder](https://m3.material.io/theme-builder#/custom)
+- [tint.dev - Palette Generator](https://www.tints.dev/)
+- [color-name.com - Get names for colors](https://www.color-name.com/)
