@@ -23,11 +23,7 @@
 
 ## Biography
 
-1. "Stefan Vögeli | Digital Ideation Enthusiast 🎨🌐 | Crafting Unique Web & Graphic Designs | Passionate about 3D, Generative Art & Photography | Learning & Innovating Daily."
-2. "👨‍💻 Stefan Vögeli | Student @ HSLU | Creative Coder & Designer | Exploring the Intersection of Art, Tech & Society | Focused on Accessibility & Positive Change | From Pencil to Pixels and Code."
-3. "Stefan Vögeli: Digital Creator | HSLU Digital Ideation Student | Making the Web Beautiful with ASP.NET, React, & Vue | Creating with a Purpose | Art | Tech | Impact."
-4. "🎓 Stefan Vögeli | HSLU Ideation Student | Web & Graphic Design Aficionado | Lover of Art, Code & Everything Creative."
-5. "Stefan Vögeli | Digital Ideation at HSLU | Blending Art & Technology | From Dynamic Web Designs to Generative Visuals | Focused on Meaningful Impact & Continuous Learning | Let’s Create Something Great Together!"
+👨‍💻 Stefan Vögeli | Creative Coder & Designer | @hslu_dfk Digital Ideation Student | Lover of Art, Code & Everything Creative | @el__stefe
 
 ## Hashtags
 
@@ -40,6 +36,7 @@
 | Tech & Innovation | `#TechForGood`<br>`#Innovation`<br>`#CodingLife`<br>`#FutureTech`<br>`#SustainableTech` |
 | Thought-Provoking & Engaging | `#ThinkDifferent`<br>`#MindfulTech`<br>`#TechEthics`<br>`#SocialImpact`<br>`#CreativeMinds` |
 | Hashtags for Accessibility & Inclusion | `#Accessibility`<br>`#InclusiveDesign`<br>`#Tech4Good`<br>`#EqualAccess`<br>`#InclusionMatters` |
+| Blender| `#blender3d`<br>`#3d`<br>`#3dart`<br>`#blender`<br>`#blendercommunity`<br>`#rendering`|
 
 > It's beneficial to occasionally include location-based or trending hashtags to broaden reach. Dont overuse hashtags; a selection of relevant tags is more effective than a long list of loosely related ones.
 
