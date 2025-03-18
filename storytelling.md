@@ -1,4 +1,0 @@
-# Storytelling
-
-## Heros Journey
-TODO: 
