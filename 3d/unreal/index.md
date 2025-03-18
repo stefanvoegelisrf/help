@@ -58,12 +58,13 @@ Levels are gameplay areas defined and contain what is visible and what is intera
 The world is the container for all levels.
 
 ### Use env. light mixer
-To easily add lights, use the env. light mixer by choosing `Window` -> `Env. light mixer` and then add the needed lights.
-
+To easily add lights, use the env. light mixer by choosing `Window` -> `Env. light mixer` and then add the needed lights. For more info, see: [epicgames.com - Environment light mixer in Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/environment-light-mixer-in-unreal-engine)
 
 ### Kit bashing
 
-### LOD
+### LOD - Level of detail
+Meshes can have different levels of detail, depending on how close we are to the mesh. We don't need to render a completely detailed mesh when the mesh is not really visible.
+In Unreal Engine, we can configure different LODs depending on how much space they take on the screen - see: [epicgames.com - Creating and using LODs in Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/creating-and-using-lods-in-unreal-engine)
 
 ### Volumetric Fog
 
