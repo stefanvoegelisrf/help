@@ -68,8 +68,6 @@ In Unreal Engine, we can configure different LODs depending on how much space th
 
 ### Volumetric Fog
 
-### Sky Light
-
 ### Runtime Virtual Textures
 
 
