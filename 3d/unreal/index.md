@@ -57,9 +57,6 @@ Levels are gameplay areas defined and contain what is visible and what is intera
 ### World
 The world is the container for all levels.
 
-### Use env. light mixer
-To easily add lights, use the env. light mixer by choosing `Window` -> `Env. light mixer` and then add the needed lights. For more info, see: [epicgames.com - Environment light mixer in Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/environment-light-mixer-in-unreal-engine)
-
 ### Kit bashing
 
 ### LOD - Level of detail
@@ -91,10 +88,6 @@ When not working with games but instead trying to achieve cinematic quality, the
 ## MetaSound
 
 ## Control Rig
-
-## Lumen
-
-### Settings for optimizing reflections
 
 ## Worldpartition
 
