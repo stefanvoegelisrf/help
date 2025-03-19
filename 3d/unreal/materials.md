@@ -63,7 +63,7 @@ The `Clear coat` shading model has a thin translucent layer over the standard ma
 
 ### Thin translucent
 
-The `Thin translucent` is for translucent material like tintend or colored glass.
+The `Thin translucent` shading model is for translucent material like tintend or colored glass.
 
 #### Example
 
@@ -90,3 +90,5 @@ The `Thin translucent` is for translucent material like tintend or colored glass
 ### Creating a material using specular - glossiness workflow
 
 ### Creating a material with normal map from noise
+
+![Normal texture from noise](images/materials/NormalFromNoise.png)
