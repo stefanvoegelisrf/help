@@ -1,6 +1,6 @@
-# App development
+# Mobile App development
 
-- [App development](#app-development)
+- [Mobile App development](#mobile-app-development)
   - [Design for IOS](#design-for-ios)
   - [Design for Android](#design-for-android)
 

@@ -2,30 +2,64 @@
 
 [Back to overview](/studiesstart/)
 
+## Content
 
-| Icon                                                  | Category              | Resources                                                                                                                                                                                                                                                                                        |
-| ----------------------------------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <img src="images/3d.jpeg" height="64"/>               | **3D**                | [3d](3d)<br>[Blender](3d/blender)<br>[Unity](unity)<br>[Physically based rendering](3d/pbr/physicallybasedrendering)<br>[OpenGL](opengl)                                                                                                                                                                                 |
-| <img src="images/accessibility.jpeg" height="64"/>    | Accessibility         | [Accessibility](accessibility)                                                                                                                                                                                                                                                                   |
-| AI                                                    | AI                    | [AI](ai)                                                                                                                                                                                                                                                                                         |
-| <img src="images/animation.jpeg" height="64"/>        | Animation             | [Animation](animation)                                                                                                                                                                                                                                                                           |
-| <img src="images/appdevelopment.jpeg" height="64"/>   | App development       | [App development](appdevelopment)                                                                                                                                                                                                                                                                |
-| <img src="images/audio.jpeg" height="64"/>            | Audio                 | [Tidal cycles](tidalcycles)                                                                                                                                                                                                                                                                      |
-| <img src="images/creativecoding.jpeg" height="64"/>   | Creative coding       | [p5](p5js)<br>[Graphic libraries](graphiclibraries)<br>[TouchDesigner](touchdesigner)<br>[Noise](noise)<br>[d3](d3)                                                                                                                                                                                          |
-| <img src="images/coding.jpeg" height="64"/>           | Coding                | [C#](csharp)<br>[Git](git)                                                                                                                                                                                                                                                                       |
-| <img src="images/colors.jpeg" height="64"/>           | Colors                | [Colors](colors)                                                                                                                                                                                                                                                                                 |
-| <img src="images/css.jpeg" height="64"/>              | CSS                   | [CSS](css)                                                                                                                                                                                                                                                                                       |
-| <img src="images/designprinciples.jpeg" height="64"/> | Design principles     | [Design principles](designprinciples)                                                                                                                                                                                                                                                            |
-| <img src="images/drawing.jpeg" height="64"/>          | Drawing               | [Drawing](drawing)                                                                                                                                                                                                                                                                               |
-| <img src="images/interfacedesign.jpeg" height="64"/>  | Interface design      | [Eight golden rules of interface design](https://capian.co/shneiderman-eight-golden-rules-interface-design)<br>[Designing interfaces](https://www.oreilly.com/library/view/designing-interfaces-3rd/9781492051954/)<br>[Material design components reference](https://m3.material.io/components) |
-| <img src="images/js.jpeg" height="64"/>               | Javascript            | [threeJS - 3D web library](threejs)<br>[Nuxt - Vue application framework](nuxt)<br>[p5 - Creative graphic library](p5js)<br>[WebAssembly](webassembly)<br>[JavaScript](javascript)<br>[rete.js - Node editor framework](retejs)                                                                  |
-| <img src="images/llm.jpeg" height="64"/>              | Large language models | [LLM](llm)                                                                                                                                                                                                                                                                                       |
-| <img src="images/machinelearning.jpeg" height="64"/>  | Machine learning      | [MediaPipe](mediapipe)                                                                                                                                                                                                                                                                           |
-| <img src="images/os.jpeg" height="64"/>               | OS                    | [macOS](macos)                                                                                                                                                                                                                                                                                   |
-| <img src="images/socialmedia.jpeg" height="64"/>      | Social Media          | [Social media](socialmedia)                                                                                                                                                                                                                                                                      |
-| <img src="images/tools.jpeg" height="64"/>            | Tools                 | [Visual Studio Code](vscode)<br>[GitHub Pages](githubpages)<br>[Gimp](gimp)                                                                                                                                                                                                                      |
-| <img src="images/typography.jpeg" height="64"/>       | Typography            | [Typography](typography)                                                                                                                                                                                                                                                                         |
-| <img src="images/uiframeworks.jpeg" height="64"/>     | UI frameworks         | [Graphic libraries](graphiclibraries)                                                                                                                                                                                                                                                            |
-| TODO: add icon                                        | User Experience       | [User experience](ux)                                                                                                                                                                                                                                                                            |
+- [3D](3d)
+  - Tools
+    - [Blender](3d/blender)
+    - [Nerfstudio](3d/nerfstudio)
+  - Game engines
+    - [Unreal Engine](3d/unreal)
+    - [Unity](unity)
+  - Technologies
+    - [OpenGL - API for 2D/3D graphics](opengl)
+    - [Gaussian Splatting - technique to represent 3D scenes](3d/gaussiansplatting)
+    - [Physically based rendering - rendering approach based on physics](3d/pbr/physicallybasedrendering)
+    - [Vive Mars Camtrack - Tracking system](3d/vivemarscamtrack)
+- [Accessibility](accessibility)
+- [AI & Machine Learning](ai)
+  - [LLM](llm)
+  - [MediaPipe](mediapipe)
+- [Animation](animation)
+- 
+- Audio
+  - [Tidal cycles](tidalcycles)
+  - [supercollider](supercollider)
+- Coding
+  - [C#](csharp)
+  - Creative coding
+    - [p5](p5js)
+    - [Graphic libraries](graphiclibraries)
+    - [TouchDesigner](touchdesigner)
+    - [Noise](noise)
+    - [d3](d3)
+  - [Git](git)
+  - [GitHub Pages](githubpages)
+  - [JavaScript](javascript)
+    - [matterjs](matterjs)
+    - [Nuxt - Vue application framework](nuxt)
+    - [rete.js - Node editor framework](retejs)
+    - [threeJS - 3D web library](threejs)
+    - [WebAssembly](webassembly)
+  - [Mobile app development](appdevelopment)
+  - [Visual Studio Code](vscode)
+- [Colors](colors)
+- [CSS](css)
+- [Design principles](designprinciples)
+  - Interface design
+    - [Eight golden rules of interface design](https://capian.co/shneiderman-eight-golden-rules-interface-design)
+    - [Designing interfaces](https://www.oreilly.com/library/view/designing-interfaces-3rd/9781492051954/)
+    - [Material design components reference](https://m3.material.io/components)
+  - [User experience](ux)
+- [Drawing](drawing)
+- [Graphic libraries](graphiclibraries)
+- OS
+  - [macOS](macos)
+- Tools
+  - [Gimp](gimp)
+- [Social media](socialmedia)
+- [Storytelling](storytelling)
+- [Typography](typography)
+
 
 TODO: add missing pages, e.g. indesign
