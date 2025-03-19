@@ -79,7 +79,7 @@ The `Thin translucent` is for translucent material like tintend or colored glass
 
 #### Configuration
 
-![Chrome material configuration](images/Materials/ChromeMaterial.jpg)
+![Chrome material configuration](images/materials/ChromeMaterial.jpg)
 
 #### Result
 
