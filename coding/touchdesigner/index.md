@@ -1,5 +1,9 @@
 # TouchDesigner
 
+[TouchDesigner](https://derivative.ca/) is a visual programming environment aimed at the creation of multimedia applications.
+
+> See: [TouchDesigner documentation](touchdesigner)
+
 - [TouchDesigner](#touchdesigner)
   - [Resources](#resources)
   - [Python cheatsheet](#python-cheatsheet)

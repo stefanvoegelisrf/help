@@ -1,17 +1,9 @@
 # Graphic libraries
 
 - [Graphic libraries](#graphic-libraries)
-  - [TouchDesigner](#touchdesigner)
   - [Skia](#skia)
   - [Avalonia](#avalonia)
   - [Lottiefiles](#lottiefiles)
-
-
-## TouchDesigner
-
-[TouchDesigner](https://derivative.ca/) is a visual programming environment aimed at the creation of multimedia applications.
-
-> See: [TouchDesigner documentation](touchdesigner)
 
 ## Skia
 

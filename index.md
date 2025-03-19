@@ -12,7 +12,7 @@
     - [Unreal Engine](3d/unreal)
     - [Unity](unity)
   - Technologies
-    - [OpenGL - API for 2D/3D graphics](opengl)
+    - [OpenGL - API for 2D/3D graphics](3d/opengl)
     - [Gaussian Splatting - technique to represent 3D scenes](3d/gaussiansplatting)
     - [Physically based rendering - rendering approach based on physics](3d/pbr/physicallybasedrendering)
     - [Vive Mars Camtrack - Tracking system](3d/vivemarscamtrack)
@@ -33,7 +33,7 @@
     - [Noise](noise)
     - [p5](coding/javascript/p5js)
     - [Tooll3](https://github.com/tooll3)
-    - [TouchDesigner](touchdesigner)
+    - [TouchDesigner](coding/touchdesigner)
   - [Git](git)
   - [GitHub Pages](githubpages)
   - [JavaScript](coding/javascript/)
