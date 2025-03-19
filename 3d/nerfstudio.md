@@ -2,26 +2,17 @@
 
 - [Nerfstudio useful tips](#nerfstudio-useful-tips)
   - [Installation](#installation)
+    - [Getting splatfacto to work on windows](#getting-splatfacto-to-work-on-windows)
   - [Set target number of frames for training with video](#set-target-number-of-frames-for-training-with-video)
   - [Training NeRF model example](#training-nerf-model-example)
   - [Training splatfacto model example](#training-splatfacto-model-example)
-  - [Getting splatfactor to work on windows](#getting-splatfactor-to-work-on-windows)
   - [Splat Examples](#splat-examples)
     - [Office H6 B8](#office-h6-b8)
       - [Render](#render)
-      - [Splat](#splat)
-    - [Airstream](#airstream)
-      - [Render](#render-1)
-      - [Splat](#splat-1)
-    - [Superstar](#superstar)
-      - [Render](#render-2)
-      - [Splat](#splat-2)
-    - [Skate](#skate)
-      - [Render](#render-3)
-      - [Splat](#splat-3)
+      - [Create gaussian splatting ply](#create-gaussian-splatting-ply)
   - [NeRF examples](#nerf-examples)
     - [Office H6 B8](#office-h6-b8-1)
-      - [Render](#render-4)
+      - [Render](#render-1)
       - [Point cloud](#point-cloud)
       - [Mesh](#mesh)
 
@@ -34,6 +25,15 @@
 - install colmap
 - add colmap to path
 - add ffmpeg to path
+
+### Getting splatfacto to work on windows
+
+Some steps that helped getting splatfacto to work:
+- Activate C++ env
+  - Navigate to installed C++ folder `cd `
+- Reinstall gsplat from github source
+  - Uninstall gsplat `pip uninstall gsplat`
+  - `pip install git+https://github.com/nerfstudio-project/gsplat.git`
 
 ## Set target number of frames for training with video
 
@@ -73,14 +73,7 @@ ns-train nerfacto --data "C:\Users\User\Documents\Nerfstudio\superstar\processed
 ns-train splatfacto --data "C:\Users\User\Documents\Nerfstudio\superstar\processeddata" 
 ```
 
-## Getting splatfactor to work on windows
 
-Some steps that helped getting splatfacto to work:
-- Activate C++ env
-  - Navigate to installed C++ folder `cd `
-- Reinstall gsplat from github source
-  - Uninstall gsplat `pip uninstall gsplat`
-  - `pip install git+https://github.com/nerfstudio-project/gsplat.git`
 
 ## Splat Examples
 
@@ -92,52 +85,10 @@ Some steps that helped getting splatfacto to work:
 ns-render camera-path --load-config outputs\processeddata\splatfacto\2025-03-07_091755\config.yml --camera-path-filename C:\Users\User\Documents\Nerfstudio\officeh6b8_2\processeddata\camera_paths\officeh6b8-render1.json --output-path renders/processeddata/officeh6b8-render1.mp4
 ```
 
-#### Splat
+#### Create gaussian splatting ply
 
 ```
 ns-export gaussian-splat --load-config outputs\processeddata\splatfacto\2025-03-07_091755\config.yml --output-dir exports/splat/ 
-```
-
-### Airstream
-
-#### Render
-
-```
-ns-render camera-path --load-config outputs\processeddata\splatfacto\2025-03-07_100229\config.yml --camera-path-filename C:\Users\User\Documents\Nerfstudio\airstream\processeddata\camera_paths\2025-03-07-10-02-32.json --output-path renders/processeddata/2025-03-07-10-02-32.mp4
-```
-
-#### Splat
-
-```
-ns-export gaussian-splat --load-config outputs\processeddata\splatfacto\2025-03-07_100229\config.yml --output-dir exports/splat/ 
-```
-
-### Superstar
-
-#### Render
-
-```
-ns-render camera-path --load-config outputs\processeddata\splatfacto\2025-03-07_132805\config.yml --camera-path-filename C:\Users\User\Documents\Nerfstudio\superstar\processeddata\camera_paths\2025-03-07-13-28-08.json --output-path renders/processeddata/2025-03-07-13-28-08.mp4
-```
-
-#### Splat
-
-```
-ns-export gaussian-splat --load-config outputs\processeddata\splatfacto\2025-03-07_132805\config.yml --output-dir exports/splat/ 
-```
-
-### Skate
-
-#### Render
-
-```
-ns-render camera-path --load-config outputs\processed_data\splatfacto\2025-03-12_124959\config.yml --camera-path-filename C:\Users\User\Documents\Nerfstudio\skate\processed_data\camera_paths\skate_gaussiansplatting_render_1.json --output-path renders/processed_data/skate_gaussiansplatting_render_1.mp4
-```
-
-#### Splat
-
-```
-ns-export gaussian-splat --load-config outputs\processed_data\splatfacto\2025-03-12_124959\config.yml --output-dir exports/splat/ 
 ```
 
 ## NeRF examples
