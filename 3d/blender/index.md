@@ -2,26 +2,11 @@
 
 - [Blender](#blender)
   - [Shortcuts](#shortcuts)
-    - [Open preferences](#open-preferences)
-    - [Move, scale, rotate, panning, hide](#move-scale-rotate-panning-hide)
-    - [Select](#select)
-    - [Duplicate](#duplicate)
-    - [X-Ray mode](#x-ray-mode)
-    - [Separating](#separating)
-    - [Change view](#change-view)
-    - [Change workspace](#change-workspace)
-    - [Add objects](#add-objects)
-    - [Edit mode(and other object modes)](#edit-modeand-other-object-modes)
-    - [Extruding](#extruding)
-    - [Sculpting](#sculpting)
-    - [Areas](#areas)
+  - [Areas](#areas)
+  - [Modifiers](#modifiers)
   - [Knowledge](#knowledge)
-    - [Modifiers](#modifiers)
-      - [Subdivision surface modifier](#subdivision-surface-modifier)
-      - [Solidify modifier](#solidify-modifier)
     - [Shade smooth \& shade flat](#shade-smooth--shade-flat)
     - [Proportional editing](#proportional-editing)
-    - [Shrinkwrap modifier](#shrinkwrap-modifier)
     - [Snapping](#snapping)
     - [Rendering](#rendering)
       - [GPU rendering: Changing settigns to render on GPU](#gpu-rendering-changing-settigns-to-render-on-gpu)
@@ -37,33 +22,10 @@
           - [Screen space reflections](#screen-space-reflections)
       - [Cycles](#cycles)
         - [Samples](#samples)
-    - [Cameras](#cameras)
-      - [Focal length/FOV](#focal-lengthfov)
-      - [Depth of field](#depth-of-field)
-      - [Sensor size](#sensor-size)
-      - [Orthographic perspective](#orthographic-perspective)
-      - [Camera view](#camera-view)
-    - [Materials](#materials)
-      - [Light scattering](#light-scattering)
-    - [Shading/Texturing](#shadingtexturing)
-      - [Noise texture](#noise-texture)
-      - [Bump node](#bump-node)
-      - [Texture coordinate](#texture-coordinate)
-        - [Creating a basic wave pattern](#creating-a-basic-wave-pattern)
-        - [Creating generated coordinates](#creating-generated-coordinates)
-      - [Image texture](#image-texture)
-      - [UV Mapping](#uv-mapping)
+  - [Camera](#camera)
+  - [Materials - Textures - UV mapping](#materials---textures---uv-mapping)
   - [Geometry nodes](#geometry-nodes)
-  - [Node groups](#node-groups)
-  - [Set curve radius](#set-curve-radius)
-  - [Resample curve node](#resample-curve-node)
-  - [Instances](#instances)
-  - [Realize instance node](#realize-instance-node)
-  - [Instance on points node](#instance-on-points-node)
-  - [Sample index node](#sample-index-node)
-  - [Curve to mesh node](#curve-to-mesh-node)
-  - [Bounding box node](#bounding-box-node)
-  - [Noise texture node](#noise-texture-node)
+  - [Combining colors with Mix](#combining-colors-with-mix)
   - [Double PI](#double-pi)
   - [Weight painting](#weight-painting)
   - [Adding parent](#adding-parent)
@@ -82,145 +44,21 @@
   - [Opening a new blender file to stitch the renders together](#opening-a-new-blender-file-to-stitch-the-renders-together)
   - [Adding back colors](#adding-back-colors)
 
-
 ## Shortcuts
 
-[Shortcut PDF from Blender Guru](Blender_3.0_Shortcuts_v1.2.pdf)
+> See: [Shortcuts](shortcuts)
 
-### Open preferences
-
-| Shortcut    | Command          |
-| ----------- | ---------------- |
-| **CMD** + , | Open preferences |
-
-### Move, scale, rotate, panning, hide
-
-| Shortcut                              | Command                                   |
-| ------------------------------------- | ----------------------------------------- |
-| **G** (with object selected)          | Move object                               |
-|                                       | press x,y,z to move along axis            |
-|                                       | click middle mouse button to snap to axis |
-| **S** (with object selected)          | Scale object                              |
-|                                       | press x,y,z to scale along axis           |
-| **R** (with object selected)          | Rotate object                             |
-|                                       | press x,y,z to roate along axis           |
-|                                       | click middle mouse button to snap to axis |
-| **Shift** + middle mouse button       | Pan                                       |
-| **option** + G                        | Snap object to center of scene            |
-| H (with object selected)              | Hide object                               |
-| **option** + H (with object selected) | Unhide object                             |
-
-
-> Press `esc` or right click to cancel the command
-
-> These commands are also used to modify meshes, vertices and so on
-
-### Select
-
-| Shortcut               | Command          |
-| ---------------------- | ---------------- |
-| **option** + **click** | Select edge loop |
-
-### Duplicate
-
-| Shortcut      | Command   |
-| ------------- | --------- |
-| **Shift** + D | duplicate |
-
-### X-Ray mode
-
-| Shortcut           | Command           |
-| ------------------ | ----------------- |
-| **Option/Alt** + Z | toggle X-Ray mode |
-
-### Separating
-
-| Shortcut | Command              |
-| -------- | -------------------- |
-| P        | open separation menu |
-
-### Change view
-
-| Shortcut                 | Command                     |
-| ------------------------ | --------------------------- |
-| **<** + 1                | camera                      |
-| **<** + 2                | bottom                      |
-| **<** + 3                | selected                    |
-| **<** + 4                | left                        |
-| **<** + 6                | right                       |
-| **<** + 7                | front                       |
-| **<** + 8                | top                         |
-| **<** + 9                | back                        |
-| middle mouse button      | orbit                       |
-|                          | hold alt to snap to axis    |
-| **option** + **CMD** + 0 | Align active camera to view |
-
-### Change workspace
-
-| Shortcut              | Command                  |
-| --------------------- | ------------------------ |
-| **control** + **Tab** | Open workspace selection |
-
-
-### Add objects
-
-| Shortcut      | Command       |
-| ------------- | ------------- |
-| **Shift** + A | open add menu |
-
-> There is a panel to customize the added shape. If it has been closed, it can be restored by pressing **F9**
-
-### [Edit mode(and other object modes)](https://docs.blender.org/manual/en/latest/editors/3dview/modes.html)
-
-| Shortcut           | Command                        |
-| ------------------ | ------------------------------ |
-| Tab                | switch to edit mode            |
-| **Control** + tab  | open mode selector             |
-| O                  | switch to proportional editing |
-| **option/alt** + S | shrink and fatten tool         |
-
-### [Extruding](https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/extrude.html)
-
-| Shortcut                           | Command                  |
-| ---------------------------------- | ------------------------ |
-| E(with vertices or faces selected) | extrude new vertice/face |
-
-### [Sculpting](https://docs.blender.org/manual/en/latest/sculpt_paint/index.html)
-
-- [Blender - Brush introduction](https://docs.blender.org/manual/en/latest/sculpt_paint/brush/introduction.html)
-
-| Shortcut      | Command                            |
-| ------------- | ---------------------------------- |
-| G             | switch to grab brush               |
-| F             | change radius size                 |
-| **Shift** + F | change strength size               |
-| Shift         | Switch to smooth brush temporarily |
-| **Shift** + S | Switch to smooth brush             |
-| **Shift** + I | Switch to inflate brush            |
-
-### [Areas](https://docs.blender.org/manual/en/latest/interface/window_system/areas.html)
+## [Areas](https://docs.blender.org/manual/en/latest/interface/window_system/areas.html)
 
 Windows inside blender are called areas.
 
 > Place the cursor in the corner of an area to create a new area. E.g. to split the view.
 
+## Modifiers
+
+> See: [Modifiers](modifiers)
+
 ## Knowledge
-
-### [Modifiers](https://docs.blender.org/manual/en/latest/modeling/modifiers/index.html)
-
-Modifiers are automatic operations that affect an object’s geometry in a non-destructive way.
-
-#### [Subdivision surface modifier](https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/subdivision_surface.html)
-
-![Subdivision surface modifier](images/subdivision%20surface%20modifier.png)
-
-The Subdivision Surface modifier is used to split the faces of a mesh into smaller faces, giving it a smooth appearance.
-
-> Keep the viewport subdivision low for better editing performance. Viewport subdivision surface modifier can also be turned off in blender.
-
-#### [Solidify modifier](https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/solidify.html)
-
-The Solidify modifier takes the surface of any mesh and adds depth, thickness to it.
 
 ### [Shade smooth & shade flat](https://docs.blender.org/manual/en/latest/modeling/meshes/editing/face/shading.html)
 
@@ -231,13 +69,6 @@ The shading of an object can be change by **right-clicking**. When using "shade-
 Proportional editing is done in edit mode and can be turned on with **O**. When selecting a vertice, vertices around it are also selected. E.g. when moving a single vertice, the vertice around move in the same direction proportionally.
 
 > Change the proportional size by **scrolling up**
-
-### [Shrinkwrap modifier](https://docs.blender.org/manual/en/latest/modeling/modifiers/deform/shrinkwrap.html)
-
-The Shrinkwrap modifier allows an object to “shrink” to the surface of another object. It moves each vertex of the object being modified to the closest position on the surface of the given mesh (using one of the four methods available).
-
-> E.g. for a donut, this enables us to wrap the icing around the donut.
-
 
 ### [Snapping](https://docs.blender.org/manual/en/latest/editors/3dview/controls/snapping.html)
 
@@ -317,134 +148,20 @@ Reduce samples to increase render time based on the size of the object. To count
 
 TODO: adaptive sampling
 
-### [Cameras](https://docs.blender.org/manual/en/latest/render/cameras.html)
+## Camera
 
-#### Focal length/FOV
+> See: [Camera](camera)
 
-The Focal Length controls the amount of zoom, i.e. the amount of the scene which is visible all at once. Longer focal lengths result in a smaller FOV (more zoom), while short focal lengths allow you to see more of the scene at once (larger FOV, less zoom).
+## Materials - Textures - UV mapping
 
-![Camera focal length](images/Camera%20focal%20length.png)
-
-#### Depth of field
-
-Focus an object to determine the focal point. If no object is focussed, define the focal distance.
-
-![Camera depth of field](images/Camera%20depth%20of%20field.png)
-
-#### Sensor size
-
-#### Orthographic perspective
-
-Objects appear at their actual size, regardless of distance. Lines will be parallel.
-
-#### [Camera view](https://docs.blender.org/manual/en/latest/editors/3dview/navigate/camera_view.html)
-
-Camera view shows the current scene from the active camera's viewpoint.
-
-### Materials
-
-To create a basic material, change the color and adjust the roughness.
-
-#### Light scattering
-
-To add scattering, add subsurface and and change subsurface radius and color.
-
-### [Shading/Texturing](https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/index.html)
-
-Texturing adds texture to objects. Texturing is achieved with shaders. The most common shader is the [Principled BSDF](https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/principled.html) shader. The Principled BSDF that combines multiple layers into a single easy to use node. It is based on the Disney principled model also known as the “PBR”(See: [Physically based rendering](../physicallybasedrendering)).
-
-![Principled BSDF Shader](images/Principled%20BSDF.png)
-
-#### Noise texture
-
-> Use a **noise texture** combined with a **color ramp** to create color variation. This can further be combined with a **bump** so that the bump can be connected to the **normal of the Shader**(E.g. Principaled BSDF) Add **texture coordinate** to **Vector input** of noise texture to change the mapping.
-
-![Noise with Bump as normal map](images/Noise%20with%20Bump%20as%20normal.png)
-
-#### [Bump node](https://docs.blender.org/manual/en/latest/render/shader_nodes/vector/bump.html)
-The Bump node generates a perturbed normal from a height texture, for bump mapping. The height value will be sampled at the shading point and two nearby points on the surface to determine the local direction of the normal.y
-
-#### [Texture coordinate](https://docs.blender.org/manual/en/latest/render/shader_nodes/input/texture_coordinate.html)
-
-Texture coordinates can be used in several ways and help with mapping procedural textures on objects.
-
-##### Creating a basic wave pattern
-
-1. Go to shading workspace
-2. Add [texture coordinate](#texture-coordinate)
-3. Create a **Separate XYZ** node and connect the **UV** from **Texture coordinate** to **Vector** of Separate XYZ.
-   - This allows us to access the coordinates from **Texure coordinate** separately. E.g. the coordinate X
-   - See: [UV Mapping](#uv-mapping)
-4. The **X coordinate** then can be used as **Vector** input for a **Math converter** of type **Sine** to create a wave, based on the X coordinate.
-5. To get greater or less variation, add another **Math converter** of type **Multiply** to multiply the X coordinate by a factor. This node has to be between **Separate XYZ** and **Sine**
-6. **Sine** will give us a value between -1 and 1 which will result in all values below 0 to be treated as 0 when converting the **Sine** output value to color.
-   1. Therefore, we need to map the output value from **Sine** from the range(-1 to 1) to the range (0,1) whch can be achiever with the **Map Range converter**.
-7. Connect the output of the **Map Range converter** to the **Base color** of the shader which will give us the wave pattern.
-
-![Wave pattern with nodes](images/wave%20pattern%20with%20nodes.png)
-
-##### Creating generated coordinates
-Using generated coordinates allows use automatically-generated texture coordinates from the vertex positions of the mesh without deformation, keeping them sticking to the surface under animation. The coordinates range from 0.0 to 1.0 over the bounding box of the undeformed mesh.
-
-1. Go to shading workspace and add [texture coordinate](#texture-coordinate)
-2. Use the **generated** value to use the generated texture coordinates
-
-
-#### Image texture
-
-Create a new **image texture** in the node editor. The texture then can be edit in the **texture paint workspace**.
-The settings of texture drawing, open the **active tool** tab in the properties panel/window.
-
-> Keep the resolution as low as possible to save render time.
-
-#### UV Mapping
-
-The UV mapping defines how a texture is mapped to a object. For this to work, the faces of an object are unwrapped onto a square. This can be changed in several ways by using the UV menu.
-
-![UV menu](images/UV%20menu.png)
-
-E.g. a cube is by default unwrapped in the following way:
-
-![UV default unwrapping of cube](images/UV%20default%20cupe%20unwrapping.png)
+> See: [Materials](materials)
 
 ## Geometry nodes
 
-TODO: Add setup of donut geometry nodes
-TODO: Add tutorial on how to create plants with geometry nodes
-TODO: Add tutorial on how to create grid
+> See: [Geometry nodes](geometrynodes)
 
-## [Node groups](https://docs.blender.org/manual/en/latest/interface/controls/nodes/groups.html)
-With node groups, repetitive parts can be reused and they provide a way to achieve a cleaner setups.
-Navigate into node groups by using **Tab** and exit them using **CTRL** + **Tab**.
 
-## [Set curve radius](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/write/set_curve_radius.html)
-With the set curve radius node, the radius of a curve can be set. This value is then used e.g. in the curve to mesh node.
-
-## [Resample curve node](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/operations/resample_curve.html)
-With the resample curve node, points on a curve will be spread according to the resample curve node. This can be either a specified amount of points or a specified length.
-
-## [Instances](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/instances.html)
-An geometry can store instances. Like that, a geometry can hold more geometry without duplicating it. An instance itself can have more geometry, objects or collections in it.
-
-## [Realize instance node](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/instances/realize_instances.html)
-The realize instance node will make instances into a real geometry. Like that, each geometry can be modified individually.
-
-## [Instance on points node](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/instances/instance_on_points.html)
-With instance on points node, instances can be placed on the position of points in a geometry.
-
-## [Sample index node](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/geometry/sample/sample_index.html)
-The Sample Index node retrieves values from a source geometry at a specific index.
-
-## [Curve to mesh node](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/operations/curve_to_mesh.html)
-The curve to mesh node converts a curve to a mesh. A profile curve can be specified to serve as the shape of the mesh.
-
-## [Bounding box node](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/geometry/operations/bounding_box.html)
-The bounding box node computes the bounding box of the input geometry.
-
-## [Noise texture node](https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/noise.html)
-The Noise Texture node evaluates a fractal Perlin noise at the input texture coordinates.
-
-## Combining colors with Mix
+## Combining colors with Mix
 https://docs.blender.org/manual/en/latest/compositing/types/color/mix/mix_color.html
 TODO: Add how to achieve the different colored sprinkles using Mix Node
 
