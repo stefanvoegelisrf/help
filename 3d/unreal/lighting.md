@@ -8,6 +8,10 @@
 
 ## Lumen
 
+Lumen is the illumination and reflection system of Unreal Engine.
+
+> See: [epicgames.com - Lumen Global Illumination and Reflections in Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine)
+
 ### Settings for optimizing reflections
 
 ## Sky Light
