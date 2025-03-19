@@ -1,5 +1,7 @@
 # Unreal Engine
 
+Unreal engine is a powerful game engine used for developing games, creating cinematic renders and virtual production.
+
 - [Unreal Engine](#unreal-engine)
   - [Lighting](#lighting)
   - [Materials](#materials)
