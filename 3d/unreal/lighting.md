@@ -27,4 +27,6 @@ When the ground is blocking the sky, it makes sense to set "Lower Hemisphere Is 
 The "Sky Distance Threshold" defines what to capture relative to where it is located. If the value is small, the objects surrounding the sky light will be captured. If it is high, the objects within the threshold distance of the sky light will be ignored.
 
 ## Use env. light mixer
-To easily add lights, use the env. light mixer by choosing `Window` -> `Env. light mixer` and then add the needed lights. For more info, see: [epicgames.com - Environment light mixer in Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/environment-light-mixer-in-unreal-engine)
+To easily add lights, use the env. light mixer by choosing `Window` -> `Env. light mixer` and then add the needed lights.
+
+> For more info, see: [epicgames.com - Environment light mixer in Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/environment-light-mixer-in-unreal-engine)
