@@ -25,7 +25,7 @@
 
 Shading models control how incoming light is reflected by the material. The `Default Lit` is the general purpose shading models mostly used.
 
-> See: [epicgames.com - Shading Models in Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/shading-models-in-unreal-engine)
+> Official documentation: [epicgames.com - Shading Models in Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/shading-models-in-unreal-engine)
 
 ### Unlit
 
@@ -47,7 +47,7 @@ The `Default Lit` shading model uses direct and indirect lighting and specularit
 
 The `Subsurface` shading model is used when subsurface scattering is necessary meaning that light penetrates the surface and then diffuses through it. E.g. ice or skin
 
-> See: [epicgames.com - Subsurface Shading Model in Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/subsurface-shading-model-in-unreal-engine)
+> Official documentation: [epicgames.com - Subsurface Shading Model in Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/subsurface-shading-model-in-unreal-engine)
 
 #### Example
 

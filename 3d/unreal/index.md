@@ -25,7 +25,6 @@ Unreal engine is a powerful game engine used for developing games, creating cine
     - [Kit bashing](#kit-bashing)
     - [LOD - Level of detail](#lod---level-of-detail)
     - [Volumetric Fog](#volumetric-fog)
-    - [Volumetric Cloud](#volumetric-cloud)
       - [Creating a custom volumetric material for volumetric clouds](#creating-a-custom-volumetric-material-for-volumetric-clouds)
     - [Runtime Virtual Textures](#runtime-virtual-textures)
     - [Niagara](#niagara)
@@ -105,17 +104,13 @@ The world is the container for all levels.
 
 ### LOD - Level of detail
 Meshes can have different levels of detail, depending on how close we are to the mesh. We don't need to render a completely detailed mesh when the mesh is not really visible.
-In Unreal Engine, we can configure different LODs depending on how much space they take on the screen - see: [epicgames.com - Creating and using LODs in Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/creating-and-using-lods-in-unreal-engine)
+In Unreal Engine, we can configure different LODs depending on how much space they take on the screen.
+
+> Official documentation: [epicgames.com - Creating and using LODs in Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/creating-and-using-lods-in-unreal-engine)
 
 ### Volumetric Fog
 
-### Volumetric Cloud
 
-> Official documentation: [epicgames.com - Volumetric Cloud Component in Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/volumetric-cloud-component-in-unreal-engine)
-
-With the volumentric cloud component, clouds can be created physically-based. It is combined with sky atmosphere and sky light using real time capture.
-
-When not working with games but instead trying to achieve cinematic quality, the following section is really helpful [epicgames.com - Achieving Cinematic Quality](https://dev.epicgames.com/documentation/en-us/unreal-engine/volumetric-cloud-component-in-unreal-engine#achievingcinematicquality)
 
 #### Creating a custom volumetric material for volumetric clouds
 
