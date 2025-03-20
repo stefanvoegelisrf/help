@@ -5,6 +5,7 @@
   - [Randomize noise texture in material](#randomize-noise-texture-in-material)
   - [Creating generative trees](#creating-generative-trees)
   - [Setting up isometric view](#setting-up-isometric-view)
+  - [Create 3D mesh from SVG](#create-3d-mesh-from-svg)
 
 
 ## Setting origin to specific point
@@ -33,3 +34,7 @@ When using a noise texture, the material always has the same texture for each ob
 - Set z rotation to 45 degrees
 - Set y rotation to 0 degrees
 - Set x rotation to 54.7 degrees
+
+## Create 3D mesh from SVG
+
+TODO
