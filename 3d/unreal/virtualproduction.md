@@ -49,6 +49,10 @@ The we call the function `Find Network Source by Name` of the `NDI Finder` compo
 
 To get feedback on our function calls, we can add `Branch` and log out messages if something has failed.
 
+> When we have multiple sources that we want to receive, it is helpful to collapse the logic to a function so it is reusable.
+>
+> ![Collapse to function](images/virtualproduction/CollapseToFunction.jpg)
+
 ### Blueprint setup for checking if sources are available
 
 To check if any NDI sources are available, it is very easy to list them.
