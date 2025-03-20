@@ -6,6 +6,7 @@
       - [Install NDI Unreal Engine SDK](#install-ndi-unreal-engine-sdk)
       - [Enable NDI IO Plugin](#enable-ndi-io-plugin)
     - [Blueprint setup for NDI receiver](#blueprint-setup-for-ndi-receiver)
+    - [Blueprint setup for checking if sources are available](#blueprint-setup-for-checking-if-sources-are-available)
 
 
 ## Using NDI sources
@@ -47,3 +48,11 @@ In this setup, we have a variable `In Source Name` which would be the name of th
 The we call the function `Find Network Source by Name` of the `NDI Finder` component with this source name. As a result we get the connection information from this source which we pass on to the function `Start Receiver` of the `NDI Receiver`.
 
 To get feedback on our function calls, we can add `Branch` and log out messages if something has failed.
+
+### Blueprint setup for checking if sources are available
+
+To check if any NDI sources are available, it is very easy to list them.
+
+![NDI List Sources](images/virtualproduction/NDIListSources.jpg)
+
+First, we get the list of sources with the function `Get Network Sources` of the `NDI Finder`. Then we extract the source and machine name from the connection information and log it.
