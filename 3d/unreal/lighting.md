@@ -6,6 +6,10 @@
   - [Sky Light](#sky-light)
   - [Volumetric Cloud](#volumetric-cloud)
   - [Use env. light mixer](#use-env-light-mixer)
+  - [Disable Auto-Exposure](#disable-auto-exposure)
+  - [Adjusting god rays](#adjusting-god-rays)
+  - [Adjusting hard and soft shadows](#adjusting-hard-and-soft-shadows)
+  - [Improving light flickering](#improving-light-flickering)
 
 ## Lumen
 
@@ -43,3 +47,37 @@ When not working with games but instead trying to achieve cinematic quality, the
 To easily add lights, use the env. light mixer by choosing `Window` -> `Env. light mixer` and then add the needed lights.
 
 > Official documentation: [epicgames.com - Environment light mixer in Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/environment-light-mixer-in-unreal-engine)
+
+## Disable Auto-Exposure
+
+Unreal Engine does automatically adjust the exposure, to disable this behaviour, follow these steps:
+
+- Add `Post Process Volume`, if desired, set the `Infinite Extent (Unbound)` to `true`, so it affects the whole level
+- Change `Metering Mode` to `Manual`
+- Change `Apply Physical Camera Exposure` to `false`
+
+![Disable auto exposure](images/lighting/disableautoexposure.jpg)
+
+After doing this, we can manually adjust the `Exposure Compensation`.
+
+## Adjusting god rays
+
+To have visible god rays, we can tweak a few settings.
+
+- In the `Exponential Height Fog`, change the `Volumetric Fog` to `true`
+- In the `Directional Light` for e.g. the sun, change the `Volumetric Scattering Intensity` to the desired value
+
+> The look and feel of the god rays can be further adjusted by changing the `Scattering Distribution` of the `Exponential Height Fog`.
+
+## Adjusting hard and soft shadows
+
+The hardness or softness of shadows is dependent on the size of the light. To make a shadow softer, increase the `Source Radius` to the desired size.
+
+## Improving light flickering
+
+Sometimes there is light flickering happening, which can be improved by following these steps:
+
+- Go to `Post Process Volume`
+- Adjust `Lumen Scene Lighting Quality`, probably increasing it
+- Adjust `Final Gather Quality`, probably increasing it
+- Adjust `Final Gather Lighting Speed Update`, probably decreasing it
